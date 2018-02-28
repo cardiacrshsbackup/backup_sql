@@ -1,9 +1,28 @@
 #First Message
 
-This is first commit, just ignore this file
+- This is first commit, just ignore this file
 
 
-This is second commit, checking push without user password
+- This is second commit, checking push without user password
 
 
-This is third commit, redo all clone using ssh instead https.. i hope it works
+- This is third commit, redo all clone using ssh instead https.. i hope it works
+
+
+- This is fourth commit, all good.. now we can push and pull without worry
+
+
+## How to do ##
+
+- Pull request (do on this folder) : 
+
+  - git pull
+
+
+- Push request (do on this folder) : 
+
+  - git add . (if you adding new files)
+  
+  - git commit -am "<Your Message For Commit Status>"
+
+  - git push
