@@ -36,8 +36,270 @@ CREATE TABLE `angiograpi` (
 
 /*!40000 ALTER TABLE `angiograpi` DISABLE KEYS */;
 LOCK TABLES `angiograpi` WRITE;
+INSERT INTO `angiograpi` VALUES ('0000000006','00000005','2018-06-05','',18,'BANG JACK','','0000-00-00',''),('0000000012','00000004','2018-06-05','',38,'TRENA WIJAYA','','0000-00-00','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `angiograpi` ENABLE KEYS */;
+
+--
+-- Table structure for table `angiograpipci`
+--
+
+DROP TABLE IF EXISTS `angiograpipci`;
+CREATE TABLE `angiograpipci` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `prosedur` varchar(25) default NULL,
+  `acs` char(1) default NULL,
+  `ketacs` varchar(20) default NULL,
+  `angina` char(1) default NULL,
+  `ccs` varchar(20) default NULL,
+  `failure` char(1) default NULL,
+  `nyha` varchar(20) default NULL,
+  `mi` char(1) default NULL,
+  `cabg` char(1) default NULL,
+  `pci` char(1) default NULL,
+  `nussuo` char(1) default NULL,
+  `lainya` varchar(30) default NULL,
+  `diabetes` char(1) default NULL,
+  `treatmen` varchar(20) default NULL,
+  `hipertensi` char(1) default NULL,
+  `smoking` char(1) default NULL,
+  `ketsmok` varchar(20) default NULL,
+  `dyslidemia` char(1) default NULL,
+  `statin` char(1) default NULL,
+  `cad` char(1) default NULL,
+  `othrs` varchar(40) default NULL,
+  `dialisis` char(1) default NULL,
+  `cerebral` char(1) default NULL,
+  `valvular` char(1) default NULL,
+  `congenital` char(1) default NULL,
+  `arythimia` char(1) default NULL,
+  `pacemaker` char(1) default NULL,
+  `mstct` char(1) default NULL,
+  `spm` char(1) default NULL,
+  `area` varchar(40) default NULL,
+  `othersd` varchar(40) default NULL,
+  `tb` varchar(20) default NULL,
+  `bb` varchar(20) default NULL,
+  `bmi` varchar(20) default NULL,
+  `hb` varchar(20) default NULL,
+  `ht` varchar(20) default NULL,
+  `trombosit` varchar(20) default NULL,
+  `imr` varchar(20) default NULL,
+  `inr` varchar(20) default NULL,
+  `pt` varchar(20) default NULL,
+  `aptt` varchar(20) default NULL,
+  `ur` varchar(20) default NULL,
+  `cr` varchar(20) default NULL,
+  `gfr` varchar(20) default NULL,
+  `ckd` char(1) default NULL,
+  `ckdstage` varchar(20) default NULL,
+  `aki` char(1) default NULL,
+  `akistage` varchar(20) default NULL,
+  `sytak` varchar(20) default NULL,
+  `euro` varchar(20) default NULL,
+  `sts` varchar(20) default NULL,
+  `cagensi` varchar(20) default NULL,
+  `cto` varchar(20) default NULL,
+  `isr` varchar(20) default NULL,
+  `ist` varchar(20) default NULL,
+  `lm` varchar(20) default NULL,
+  `lad` varchar(20) default NULL,
+  `lcx` varchar(20) default NULL,
+  `rca` varchar(20) default NULL,
+  `ctod` char(1) default NULL,
+  `isictod` varchar(20) default NULL,
+  `callateral` char(1) default NULL,
+  `pucture` varchar(20) default NULL,
+  `syntaxkscore` varchar(20) default NULL,
+  `conclusion` varchar(20) default NULL,
+  `lmd` char(1) default NULL,
+  `lmlokasi` varchar(20) default NULL,
+  `lmsize` varchar(20) default NULL,
+  `ladd` char(1) default NULL,
+  `lokasilad` varchar(20) default NULL,
+  `sizelad` varchar(20) default NULL,
+  `lcxd` char(1) default NULL,
+  `lokasilcx` varchar(20) default NULL,
+  `sizelcx` varchar(20) default NULL,
+  `rcad` varchar(20) default NULL,
+  `lokasirca` varchar(20) default NULL,
+  `sizerca` varchar(20) default NULL,
+  `pcisuses` char(1) default NULL,
+  `failedpci` varchar(20) default NULL,
+  `recas` char(1) default NULL,
+  `pciplan` char(1) default NULL,
+  `timi` varchar(20) default NULL,
+  `stenosis` char(1) default NULL,
+  `fluoro` varchar(20) default NULL,
+  `prosedurtme` varchar(20) default NULL,
+  `vol` varchar(20) default NULL,
+  `heparin` varchar(20) default NULL,
+  `ntg` varchar(20) default NULL,
+  `coronay` char(1) default NULL,
+  `pericardial` char(1) default NULL,
+  `tamponade` char(1) default NULL,
+  `cardiac` char(1) default NULL,
+  `diseksi` char(1) default NULL,
+  `thrombus` char(1) default NULL,
+  `stroke` char(1) default NULL,
+  `bleeding` char(1) default NULL,
+  `aritmia` char(1) default NULL,
+  `death` char(1) default NULL,
+  `infark` char(1) default NULL,
+  `inducesd` char(1) default NULL,
+  `acute` char(1) default NULL,
+  `komplik` varchar(20) default NULL,
+  `isrd` varchar(40) default NULL,
+  `istd` varchar(20) default NULL,
+  `tbd` varchar(20) default NULL,
+  `bbd` varchar(20) default NULL,
+  `bsa` varchar(20) default NULL,
+  `heart` varchar(20) default NULL,
+  `ekg` varchar(20) default NULL,
+  `hbd` varchar(20) default NULL,
+  `sa` varchar(20) default NULL,
+  `comption` varchar(20) default NULL,
+  `tindakan` varchar(20) default NULL,
+  `svchigh` varchar(20) default NULL,
+  `svclow` varchar(20) default NULL,
+  `ivc` varchar(20) default NULL,
+  `ra` varchar(20) default NULL,
+  `rv` varchar(20) default NULL,
+  `lpa` varchar(20) default NULL,
+  `rpa` varchar(20) default NULL,
+  `la` varchar(20) default NULL,
+  `lv` char(1) default NULL,
+  `tipelv` varchar(20) default NULL,
+  `vollv` varchar(20) default NULL,
+  `rvd` char(1) default NULL,
+  `tiperv` varchar(20) default NULL,
+  `volrv` varchar(20) default NULL,
+  `pvataskanan` varchar(20) default NULL,
+  `pvbawahkanan` varchar(20) default NULL,
+  `pvkiriatas` varchar(20) default NULL,
+  `pvkiribawah` varchar(20) default NULL,
+  `lvd` varchar(20) default NULL,
+  `aoa` varchar(20) default NULL,
+  `aod` varchar(20) default NULL,
+  `pad` char(1) default NULL,
+  `patipe` varchar(20) default NULL,
+  `pavol` varchar(20) default NULL,
+  `ao` char(1) default NULL,
+  `aotipe` varchar(20) default NULL,
+  `aovol` varchar(20) default NULL,
+  `psvc` varchar(20) default NULL,
+  `pivc` varchar(20) default NULL,
+  `pra` varchar(20) default NULL,
+  `prv` varchar(20) default NULL,
+  `ppa` varchar(20) default NULL,
+  `ppv` varchar(20) default NULL,
+  `pao` varchar(20) default NULL,
+  `plv` varchar(20) default NULL,
+  `rsvc` varchar(20) default NULL,
+  `rivc` varchar(20) default NULL,
+  `rra` varchar(20) default NULL,
+  `rrv` varchar(20) default NULL,
+  `rrpa` varchar(20) default NULL,
+  `rpv` varchar(20) default NULL,
+  `rao` varchar(20) default NULL,
+  `rlv` varchar(20) default NULL,
+  `ssvc` varchar(20) default NULL,
+  `sivc` varchar(20) default NULL,
+  `sra` varchar(20) default NULL,
+  `srv` varchar(20) default NULL,
+  `spa` varchar(20) default NULL,
+  `spv` varchar(20) default NULL,
+  `sao` varchar(20) default NULL,
+  `slv` varchar(20) default NULL,
+  `osvc` varchar(20) default NULL,
+  `oivc` varchar(20) default NULL,
+  `ora` varchar(20) default NULL,
+  `orv` varchar(20) default NULL,
+  `opa` varchar(20) default NULL,
+  `opv` varchar(20) default NULL,
+  `oao` varchar(20) default NULL,
+  `olv` varchar(20) default NULL,
+  `qp` varchar(20) default NULL,
+  `par` varchar(20) default NULL,
+  `pari` varchar(20) default NULL,
+  `clusion` varchar(20) default NULL,
+  `terapi` varchar(50) default NULL,
+  `diagnosa` varchar(20) default NULL,
+  `ekgg` varchar(50) default NULL,
+  `preme` varchar(30) default NULL,
+  `arteri` varchar(20) default NULL,
+  `vena` varchar(20) default NULL,
+  `arterid` varchar(20) default NULL,
+  `venad` varchar(20) default NULL,
+  `hepatin` varchar(20) default NULL,
+  `ceda` varchar(20) default NULL,
+  `aop` varchar(20) default NULL,
+  `aopost` varchar(20) default NULL,
+  `pap` varchar(20) default NULL,
+  `pappost` varchar(20) default NULL,
+  `pda` varchar(20) default NULL,
+  `vsd` varchar(20) default NULL,
+  `asd` varchar(20) default NULL,
+  `defectpanjang` varchar(20) default NULL,
+  `defecflebar` varchar(20) default NULL,
+  `approach` varchar(20) default NULL,
+  `shedf` varchar(20) default NULL,
+  `shedfsize` varchar(20) default NULL,
+  `device` varchar(20) default NULL,
+  `sizedevice` varchar(20) default NULL,
+  `prosukses` char(1) default NULL,
+  `residual` char(1) default NULL,
+  `fluorod` varchar(20) default NULL,
+  `protime` varchar(20) default NULL,
+  `kolateral` varchar(20) default NULL,
+  `fistula` varchar(20) default NULL,
+  `balbn` varchar(20) default NULL,
+  `tee` varchar(20) default NULL,
+  `tte` varchar(20) default NULL,
+  `dishult` varchar(20) default NULL,
+  `diagnosad` varchar(20) default NULL,
+  `ekgc` varchar(20) default NULL,
+  `premec` varchar(20) default NULL,
+  `arteric` varchar(20) default NULL,
+  `venac` varchar(20) default NULL,
+  `arterib` varchar(20) default NULL,
+  `venab` varchar(20) default NULL,
+  `heparinb` varchar(20) default NULL,
+  `aob` varchar(200) default NULL,
+  `lvb` varchar(20) default NULL,
+  `aobd` varchar(20) default NULL,
+  `lvbd` varchar(20) default NULL,
+  `amulus` varchar(20) default NULL,
+  `ballonsize` varchar(20) default NULL,
+  `complete` char(1) default NULL,
+  `florob` varchar(20) default NULL,
+  `procedurb` varchar(20) default NULL,
+  `compib` varchar(80) default NULL,
+  `tbb` varchar(20) default NULL,
+  `bbb` varchar(20) default NULL,
+  `bmib` varchar(20) default NULL,
+  `hbb` varchar(20) default NULL,
+  `htb` varchar(20) default NULL,
+  `trombob` varchar(20) default NULL,
+  `imrb` varchar(20) default NULL,
+  `ptb` varchar(20) default NULL,
+  `apttb` varchar(20) default NULL,
+  `urb` varchar(20) default NULL,
+  `crb` varchar(20) default NULL,
+  `gfrn` varchar(20) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `angiograpipci`
+--
+
+
+/*!40000 ALTER TABLE `angiograpipci` DISABLE KEYS */;
+LOCK TABLES `angiograpipci` WRITE;
+INSERT INTO `angiograpipci` VALUES ('0000000012','00000004','','','','','','','','','','','','','Y','','Y','Y','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''),('0000000006','00000005','Primary','Y','','N','','','','Y','','','','','Y','','N','Y','','','','','','Y','N','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `angiograpipci` ENABLE KEYS */;
 
 --
 -- Table structure for table `bedah`
@@ -62,8 +324,500 @@ CREATE TABLE `bedah` (
 
 /*!40000 ALTER TABLE `bedah` DISABLE KEYS */;
 LOCK TABLES `bedah` WRITE;
+INSERT INTO `bedah` VALUES ('0000000001','00000005','2018-06-04',0,'BANG JACK',1,2,1),('0000000018','00000011','2018-06-05',0,'AULIA',0,0,0);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `bedah` ENABLE KEYS */;
+
+--
+-- Table structure for table `bedahsatu`
+--
+
+DROP TABLE IF EXISTS `bedahsatu`;
+CREATE TABLE `bedahsatu` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `asd` char(1) default NULL,
+  `tr` char(1) default NULL,
+  `asdd` char(1) default NULL,
+  `defect` char(1) default NULL,
+  `atresia` char(1) default NULL,
+  `dorv` char(1) default NULL,
+  `ar` char(1) default NULL,
+  `ts` char(1) default NULL,
+  `vsd` char(1) default NULL,
+  `papvr` char(1) default NULL,
+  `tga` char(1) default NULL,
+  `ventricle` char(1) default NULL,
+  `ms` char(1) default NULL,
+  `ps` char(1) default NULL,
+  `pda` char(1) default NULL,
+  `tapvr` char(1) default NULL,
+  `pulatresia` char(1) default NULL,
+  `ebdtein` char(1) default NULL,
+  `mr` char(1) default NULL,
+  `pr` char(1) default NULL,
+  `csvsd` char(1) default NULL,
+  `tof` char(1) default NULL,
+  `sventricle` char(1) default NULL,
+  `plsvc` char(1) default NULL,
+  `laink` varchar(40) default NULL,
+  `dm` char(1) default NULL,
+  `sle` char(1) default NULL,
+  `peneumonia` char(1) default NULL,
+  `sewuele` char(1) default NULL,
+  `displidemia` char(1) default NULL,
+  `liver` char(1) default NULL,
+  `bengkak` char(1) default NULL,
+  `perut` char(1) default NULL,
+  `syncope` char(1) default NULL,
+  `berdebar` char(1) default NULL,
+  `kebiruan` char(1) default NULL,
+  `spell` char(1) default NULL,
+  `ispb` char(1) default NULL,
+  `feeding` char(1) default NULL,
+  `demam` char(1) default NULL,
+  `menopause` char(1) default NULL,
+  `premature` char(1) default NULL,
+  `acs` char(1) default NULL,
+  `congenital` char(1) default NULL,
+  `sbp` varchar(20) default NULL,
+  `dbp` varchar(20) default NULL,
+  `hr` varchar(20) default NULL,
+  `na` varchar(20) default NULL,
+  `rr` varchar(20) default NULL,
+  `suhu` varchar(20) default NULL,
+  `gcs` varchar(20) default NULL,
+  `anemis` char(1) default NULL,
+  `jvp` char(1) default NULL,
+  `kardiomehali` char(1) default NULL,
+  `rv` char(1) default NULL,
+  `apeks` char(1) default NULL,
+  `thrill` char(1) default NULL,
+  `s1` char(1) default NULL,
+  `isis1` varchar(20) default NULL,
+  `s2` char(1) default NULL,
+  `isiss2` varchar(20) default NULL,
+  `s3` char(1) default NULL,
+  `s4` char(1) default NULL,
+  `hepatomegali` char(1) default NULL,
+  `ascites` char(1) default NULL,
+  `edema` char(1) default NULL,
+  `clubbing` char(1) default NULL,
+  `akral` char(1) default NULL,
+  `crt` char(1) default NULL,
+  `signar` char(1) default NULL,
+  `edm` varchar(20) default NULL,
+  `esm` varchar(20) default NULL,
+  `psm` varchar(20) default NULL,
+  `carvalo` char(1) default NULL,
+  `snap` char(1) default NULL,
+  `ejec` char(1) default NULL,
+  `murmur` varchar(20) default NULL,
+  `midsys` char(1) default NULL,
+  `hb` varchar(20) default NULL,
+  `ht` varchar(20) default NULL,
+  `er` varchar(20) default NULL,
+  `l` varchar(20) default NULL,
+  `trlab` varchar(20) default NULL,
+  `mcv` varchar(20) default NULL,
+  `mch` varchar(20) default NULL,
+  `mchc` varchar(20) default NULL,
+  `ur` varchar(20) default NULL,
+  `cr` varchar(20) default NULL,
+  `nalab` varchar(20) default NULL,
+  `k` varchar(20) default NULL,
+  `ca` varchar(20) default NULL,
+  `mg` varchar(20) default NULL,
+  `sgot` varchar(20) default NULL,
+  `sgpt` varchar(20) default NULL,
+  `bnp` varchar(20) default NULL,
+  `ntbnp` varchar(20) default NULL,
+  `trot` varchar(20) default NULL,
+  `trol` varchar(20) default NULL,
+  `ckmb` varchar(20) default NULL,
+  `gds` varchar(20) default NULL,
+  `gdpp` varchar(20) default NULL,
+  `gdp` varchar(20) default NULL,
+  `hba` varchar(20) default NULL,
+  `diff` varchar(20) default NULL,
+  `pt` varchar(20) default NULL,
+  `aptt` varchar(20) default NULL,
+  `inr` varchar(20) default NULL,
+  `lainlab` varchar(20) default NULL,
+  `ritme` char(1) default NULL,
+  `qrs` char(1) default NULL,
+  `lad` char(1) default NULL,
+  `rad` char(1) default NULL,
+  `superior` char(1) default NULL,
+  `takikardi` char(1) default NULL,
+  `qrsrate` varchar(20) default NULL,
+  `pwave` varchar(20) default NULL,
+  `pwd` varchar(20) default NULL,
+  `bradikardi` char(1) default NULL,
+  `printerval` varchar(20) default NULL,
+  `qtinterval` varchar(20) default NULL,
+  `qtdurasi` varchar(20) default NULL,
+  `atrial` char(1) default NULL,
+  `qtd` varchar(20) default NULL,
+  `qpat` varchar(20) default NULL,
+  `elevasi` char(1) default NULL,
+  `avnrt` char(1) default NULL,
+  `depresi` varchar(20) default NULL,
+  `inversi` varchar(20) default NULL,
+  `lvh` varchar(20) default NULL,
+  `vt` char(1) default NULL,
+  `avblock` char(1) default NULL,
+  `lainekg` varchar(20) default NULL,
+  `kardio` char(1) default NULL,
+  `ictus` char(1) default NULL,
+  `ctr` char(1) default NULL,
+  `bendungan` char(1) default NULL,
+  `aorta` char(1) default NULL,
+  `pulmonal` char(1) default NULL,
+  `jantung` char(1) default NULL,
+  `contour` char(1) default NULL,
+  `infiltrat` char(1) default NULL,
+  `lokasiinfitrat` varchar(20) default NULL,
+  `lainya` varchar(20) default NULL,
+  `eko` varchar(100) default NULL,
+  `tee` varchar(100) default NULL,
+  `rhcra` char(1) default NULL,
+  `rhcrv` char(1) default NULL,
+  `pcwp` char(1) default NULL,
+  `ivc` char(1) default NULL,
+  `svc` char(1) default NULL,
+  `ao` char(1) default NULL,
+  `pa` char(1) default NULL,
+  `pv` char(1) default NULL,
+  `qp` char(1) default NULL,
+  `pari` char(1) default NULL,
+  `vsmanterior` char(1) default NULL,
+  `vsmanteroseptal` char(1) default NULL,
+  `vsmanterolateral` char(1) default NULL,
+  `vsminferolateral` char(1) default NULL,
+  `vsminferior` char(1) default NULL,
+  `vsminferoseptal` char(1) default NULL,
+  `vsmpikalanterior` char(1) default NULL,
+  `vsmapikalseptal` char(1) default NULL,
+  `vsmapikalinferior` char(1) default NULL,
+  `vsmapikalseptald` char(1) default NULL,
+  `vnsmanterior` char(1) default NULL,
+  `vnsmanteroseptal` char(1) default NULL,
+  `vnsminferolateral` char(1) default NULL,
+  `vnsminferior` char(1) default NULL,
+  `vnsminferoseptal` char(1) default NULL,
+  `vnsmapikalinterior` char(1) default NULL,
+  `vnsmapikalseptal` char(1) default NULL,
+  `vnsmapikalinferoir` char(1) default NULL,
+  `vnsmapikalseptald` char(1) default NULL,
+  `spmmanterior` char(1) default NULL,
+  `spmmanteroseptal` char(1) default NULL,
+  `spmmanterolateral` char(1) default NULL,
+  `spmminferolateral` char(1) default NULL,
+  `spmminferior` char(1) default NULL,
+  `spmminbferoseptal` char(1) default NULL,
+  `spmmapikalanterior` char(1) default NULL,
+  `spmmapikalseptal` char(1) default NULL,
+  `spmmaoikalinferior` char(1) default NULL,
+  `spmmapikalseptald` char(1) default NULL,
+  `spmdefekanterior` char(1) default NULL,
+  `spmdefekanteroseptal` char(1) default NULL,
+  `spmdefekanterolateral` char(1) default NULL,
+  `spmdefekinferolateral` char(1) default NULL,
+  `spmdefekinferior` char(1) default NULL,
+  `spmdefekinfreoseptal` char(1) default NULL,
+  `spmdefekapkanterior` char(1) default NULL,
+  `spmdefekapkseptal` char(1) default NULL,
+  `spmdefekapkinfreior` char(1) default NULL,
+  `spmdefekapkseptald` char(1) default NULL,
+  `spmparsialanterior` char(1) default NULL,
+  `spmparsialanteroseptal` char(1) default NULL,
+  `spmparsialanterolateral` char(1) default NULL,
+  `spmparsialinferolateral` char(1) default NULL,
+  `spmparsialinferior` char(1) default NULL,
+  `spmparsialinfreoseptal` char(1) default NULL,
+  `spmparsialapkanterior` char(1) default NULL,
+  `spmparsialapkseptal` char(1) default NULL,
+  `spmparsialapkinferior` char(1) default NULL,
+  `spmparsialapkseptald` char(1) default NULL,
+  `tgloperasi` date default NULL,
+  `jumlah` varchar(10) default NULL,
+  `radial` varchar(10) default NULL,
+  `lima` varchar(10) default NULL,
+  `lcxprox` char(1) default NULL,
+  `rca` char(1) default NULL,
+  `lcxmid` char(1) default NULL,
+  `pdad` char(1) default NULL,
+  `distal` char(1) default NULL,
+  `rpl` char(1) default NULL,
+  `om1` char(1) default NULL,
+  `om2` char(1) default NULL,
+  `redo` char(1) default NULL,
+  `indikasiredo` varchar(50) default NULL,
+  `lcxprokd` char(1) default NULL,
+  `rcad` char(1) default NULL,
+  `lcxmidd` char(1) default NULL,
+  `pdac` char(1) default NULL,
+  `distald` char(1) default NULL,
+  `rpld` char(1) default NULL,
+  `om1d` char(1) default NULL,
+  `om2d` char(1) default NULL,
+  `mitral` char(1) default NULL,
+  `aml` char(1) default NULL,
+  `pml` char(1) default NULL,
+  `annulop` char(1) default NULL,
+  `triscupidanu` char(1) default NULL,
+  `avr` char(1) default NULL,
+  `bioprostek` char(1) default NULL,
+  `bioprestiktype` varchar(10) default NULL,
+  `bioprestiksize` varchar(10) default NULL,
+  `mekanikal` char(1) default NULL,
+  `mekanikaltype` varchar(10) default NULL,
+  `mekanikalsize` varchar(10) default NULL,
+  `redod` char(1) default NULL,
+  `indikasiredod` varchar(30) default NULL,
+  `nvr` char(1) default NULL,
+  `biotype` varchar(10) default NULL,
+  `biosize` varchar(10) default NULL,
+  `mekanikd` char(1) default NULL,
+  `typemekanik` varchar(10) default NULL,
+  `sizemekanik` varchar(10) default NULL,
+  `btshunt` char(1) default NULL,
+  `btmodified` char(1) default NULL,
+  `waterson` char(1) default NULL,
+  `pott` char(1) default NULL,
+  `pabanding` char(1) default NULL,
+  `glenn` char(1) default NULL,
+  `bdg` char(1) default NULL,
+  `fontan` char(1) default NULL,
+  `norwood` char(1) default NULL,
+  `mustard` char(1) default NULL,
+  `senning` char(1) default NULL,
+  `jatenev` char(3) default NULL,
+  `rastelli` char(1) default NULL,
+  `sennli` char(1) default NULL,
+  `damus` char(1) default NULL,
+  `redoc` char(1) default NULL,
+  `indikasiredoc` varchar(30) default NULL,
+  `tapvc` char(1) default NULL,
+  `pappvc` char(1) default NULL,
+  `asdrepair` char(1) default NULL,
+  `suture` char(1) default NULL,
+  `prosthetic` char(1) default NULL,
+  `pericardial` char(1) default NULL,
+  `vsdrepair` char(1) default NULL,
+  `avsd` char(1) default NULL,
+  `pdarepair` char(1) default NULL,
+  `thoracotomy` char(1) default NULL,
+  `sternotomy` char(1) default NULL,
+  `onpump` varchar(10) default NULL,
+  `cpb` varchar(10) default NULL,
+  `aox` varchar(10) default NULL,
+  `peripopreative` varchar(100) default NULL,
+  `ritmed` char(1) default NULL,
+  `qrsaxis` char(1) default NULL,
+  `ladd` char(1) default NULL,
+  `radc` char(1) default NULL,
+  `superiorekg` char(1) default NULL,
+  `takikardid` char(1) default NULL,
+  `qrsrated` varchar(10) default NULL,
+  `pwaved` varchar(10) default NULL,
+  `pwdd` varchar(10) default NULL,
+  `bradikardid` char(1) default NULL,
+  `prekg` varchar(10) default NULL,
+  `qtekg` varchar(10) default NULL,
+  `qtdurasiekg` varchar(10) default NULL,
+  `fibrilasi` varchar(10) default NULL,
+  `qtdekg` varchar(10) default NULL,
+  `qtpatekg` varchar(10) default NULL,
+  `elevasid` char(1) default NULL,
+  `avnrtekg` char(1) default NULL,
+  `stdepresi` varchar(10) default NULL,
+  `inversoekg` varchar(10) default NULL,
+  `lvhekg` varchar(10) default NULL,
+  `avrtekg` char(1) default NULL,
+  `vtekg` char(1) default NULL,
+  `avblockd` char(1) default NULL,
+  `lainekgd` varchar(20) default NULL,
+  `kardiomegalid` char(1) default NULL,
+  `ictusd` char(1) default NULL,
+  `ctrd` char(1) default NULL,
+  `parud` char(1) default NULL,
+  `aortad` char(1) default NULL,
+  `pulmonald` char(1) default NULL,
+  `pinggangjantung` char(1) default NULL,
+  `contourd` char(1) default NULL,
+  `inftrart` char(1) default NULL,
+  `lokasiinfitratd` varchar(10) default NULL,
+  `lainx` varchar(30) default NULL,
+  `ketecho` varchar(100) default NULL,
+  `hbd` varchar(20) default NULL,
+  `htd` varchar(20) default NULL,
+  `erd` varchar(20) default NULL,
+  `ld` char(2) default NULL,
+  `trd` varchar(20) default NULL,
+  `mcvd` varchar(20) default NULL,
+  `mchd` varchar(20) default NULL,
+  `mchcd` varchar(20) default NULL,
+  `urd` varchar(20) default NULL,
+  `crd` varchar(20) default NULL,
+  `nad` varchar(20) default NULL,
+  `kd` varchar(20) default NULL,
+  `cad` varchar(20) default NULL,
+  `mgd` varchar(20) default NULL,
+  `sgotd` varchar(20) default NULL,
+  `sgptd` varchar(20) default NULL,
+  `bnpd` varchar(20) default NULL,
+  `ntd` varchar(20) default NULL,
+  `troponid` varchar(20) default NULL,
+  `tropininl` varchar(20) default NULL,
+  `ckmbd` varchar(20) default NULL,
+  `gdsd` varchar(20) default NULL,
+  `gdjppd` varchar(20) default NULL,
+  `gdpd` varchar(20) default NULL,
+  `hbad` varchar(20) default NULL,
+  `diffd` varchar(20) default NULL,
+  `ptd` varchar(20) default NULL,
+  `apttd` varchar(20) default NULL,
+  `inrd` varchar(20) default NULL,
+  `aritmia` char(1) default NULL,
+  `efusi` char(1) default NULL,
+  `reperfusion` char(1) default NULL,
+  `valvedys` char(1) default NULL,
+  `aki` char(1) default NULL,
+  `stroke` char(1) default NULL,
+  `bleeding` char(1) default NULL,
+  `pneumonmia` char(1) default NULL,
+  `lamarawat` varchar(20) default NULL,
+  `acei` varchar(20) default NULL,
+  `arb` varchar(20) default NULL,
+  `bbd` varchar(20) default NULL,
+  `mra` varchar(20) default NULL,
+  `ccbd` varchar(20) default NULL,
+  `ccbdg` varchar(20) default NULL,
+  `asptin` varchar(20) default NULL,
+  `cpg` varchar(20) default NULL,
+  `warfari` varchar(20) default NULL,
+  `noac` varchar(20) default NULL,
+  `statin` varchar(20) default NULL,
+  `othresg` varchar(20) default NULL,
+  `kethiudup` varchar(100) default NULL,
+  `tglfolow` date default NULL,
+  `kelsub` varchar(100) default NULL,
+  `nyeri` char(1) default NULL,
+  `sesak` char(1) default NULL,
+  `batuk` char(1) default NULL,
+  `nyeridada` char(1) default NULL,
+  `lainkeluh` varchar(30) default NULL,
+  `sbpc` varchar(10) default NULL,
+  `dbpc` varchar(10) default NULL,
+  `hrc` varchar(10) default NULL,
+  `nc` varchar(10) default NULL,
+  `rrc` varchar(10) default NULL,
+  `suhuc` varchar(10) default NULL,
+  `gcsc` varchar(10) default NULL,
+  `anemisc` char(1) default NULL,
+  `jvpc` char(1) default NULL,
+  `kardiomegalic` char(1) default NULL,
+  `rvheavec` char(1) default NULL,
+  `apeksc` char(1) default NULL,
+  `thrillc` char(1) default NULL,
+  `s1c` varchar(10) default NULL,
+  `s2c` varchar(10) default NULL,
+  `s3c` char(1) default NULL,
+  `s4c` char(1) default NULL,
+  `hepatomegalic` char(1) default NULL,
+  `actices` char(1) default NULL,
+  `edemac` char(1) default NULL,
+  `clubbingc` char(1) default NULL,
+  `akralcv` char(1) default NULL,
+  `crtc` char(1) default NULL,
+  `bpc` varchar(10) default NULL,
+  `dbpcd` varchar(10) default NULL,
+  `hrcd` varchar(10) default NULL,
+  `ncd` varchar(10) default NULL,
+  `rrcd` varchar(10) default NULL,
+  `suhudc` varchar(10) default NULL,
+  `drainn` varchar(100) default NULL,
+  `intakew` varchar(10) default NULL,
+  `ouputv` varchar(10) default NULL,
+  `blanced` varchar(10) default NULL,
+  `urined` varchar(10) default NULL,
+  `ritmec` char(1) default NULL,
+  `qrsaxisc` char(1) default NULL,
+  `ladc` char(1) default NULL,
+  `radcd` char(1) default NULL,
+  `superc` char(1) default NULL,
+  `takikardic` char(1) default NULL,
+  `ratesc` varchar(10) default NULL,
+  `pwavec` varchar(10) default NULL,
+  `pwdc` varchar(10) default NULL,
+  `brakidkardi` char(1) default NULL,
+  `printervalc` varchar(10) default NULL,
+  `qtintervalc` varchar(10) default NULL,
+  `qtdurasic` varchar(10) default NULL,
+  `fibrilasic` char(1) default NULL,
+  `qtdcv` varchar(10) default NULL,
+  `qpatc` varchar(10) default NULL,
+  `stelevasic` char(1) default NULL,
+  `avnrtc` char(1) default NULL,
+  `stdepresic` varchar(10) default NULL,
+  `inversic` varchar(10) default NULL,
+  `lvhc` varchar(10) default NULL,
+  `avrtc` char(1) default NULL,
+  `vtc` char(1) default NULL,
+  `avbc` char(1) default NULL,
+  `lainvv` varchar(10) default NULL,
+  `hbc` varchar(10) default NULL,
+  `htc` varchar(10) default NULL,
+  `lc` varchar(10) default NULL,
+  `trc` varchar(10) default NULL,
+  `urc` varchar(10) default NULL,
+  `krc` varchar(10) default NULL,
+  `nac` varchar(10) default NULL,
+  `kc` varchar(10) default NULL,
+  `cac` varchar(10) default NULL,
+  `mgc` varchar(10) default NULL,
+  `crpc` varchar(10) default NULL,
+  `bnpc` varchar(10) default NULL,
+  `kolc` varchar(10) default NULL,
+  `ldlc` varchar(10) default NULL,
+  `hdlc` varchar(10) default NULL,
+  `tgc` varchar(10) default NULL,
+  `gdsc` varchar(10) default NULL,
+  `gdpc` varchar(10) default NULL,
+  `sgotc` varchar(10) default NULL,
+  `ptc` varchar(10) default NULL,
+  `pttc` varchar(10) default NULL,
+  `inrc` varchar(10) default NULL,
+  `troptc` varchar(10) default NULL,
+  `gdppc` varchar(10) default NULL,
+  `hbac` varchar(10) default NULL,
+  `sgptc` varchar(10) default NULL,
+  `basofilc` varchar(10) default NULL,
+  `esinofilc` varchar(10) default NULL,
+  `batangc` varchar(10) default NULL,
+  `segmenc` varchar(10) default NULL,
+  `limfositc` varchar(10) default NULL,
+  `monositc` varchar(10) default NULL,
+  `laktatc` varchar(10) default NULL,
+  `fibroic` varchar(10) default NULL,
+  `dinnerc` varchar(10) default NULL,
+  `lainccv` varchar(30) default NULL,
+  `vnsmanterolateral` char(1) default NULL,
+  `jumlahd` varchar(10) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `bedahsatu`
+--
+
+
+/*!40000 ALTER TABLE `bedahsatu` DISABLE KEYS */;
+LOCK TABLES `bedahsatu` WRITE;
+INSERT INTO `bedahsatu` VALUES ('0000000001','00000005','A','A','','','A','','A','','','','','','A','','','','','','','','','','','','','A','','','','A','','A','A','A','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','A','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''),('0000000018','00000011','','A','','','','','','A','','','','','','A','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `bedahsatu` ENABLE KEYS */;
 
 --
 -- Table structure for table `dokter`
@@ -115,8 +869,527 @@ CREATE TABLE `echokardiologi` (
 
 /*!40000 ALTER TABLE `echokardiologi` DISABLE KEYS */;
 LOCK TABLES `echokardiologi` WRITE;
+INSERT INTO `echokardiologi` VALUES ('0000000017','00000002','2018-05-10',40,'YOPI',3,1,'2','',''),('0000000014','00000001','2018-06-05',31,'YUAN',0,0,'','','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `echokardiologi` ENABLE KEYS */;
+
+--
+-- Table structure for table `echokardiologisatu`
+--
+
+DROP TABLE IF EXISTS `echokardiologisatu`;
+CREATE TABLE `echokardiologisatu` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `la` varchar(20) default NULL,
+  `lad` varchar(20) default NULL,
+  `bsa` varchar(20) default NULL,
+  `bsad` varchar(20) default NULL,
+  `lavi` varchar(20) default NULL,
+  `lavid` varchar(20) default NULL,
+  `avi` varchar(20) default NULL,
+  `avid` varchar(20) default NULL,
+  `laa` varchar(20) default NULL,
+  `laad` varchar(20) default NULL,
+  `raxis` varchar(20) default NULL,
+  `raxisd` varchar(20) default NULL,
+  `minor` varchar(20) default NULL,
+  `minord` varchar(20) default NULL,
+  `rbsa` varchar(20) default NULL,
+  `rbsad` varchar(20) default NULL,
+  `ravi` varchar(20) default NULL,
+  `ravid` varchar(20) default NULL,
+  `sep` varchar(20) default NULL,
+  `sepd` varchar(20) default NULL,
+  `sepc` varchar(20) default NULL,
+  `sepcd` varchar(20) default NULL,
+  `lvid` varchar(20) default NULL,
+  `lvidd` varchar(20) default NULL,
+  `lvc` varchar(29) default NULL,
+  `lvcd` varchar(20) default NULL,
+  `wall` varchar(20) default NULL,
+  `walld` varchar(20) default NULL,
+  `walc` varchar(20) default NULL,
+  `walcd` varchar(20) default NULL,
+  `esv` varchar(20) default NULL,
+  `esvd` varchar(20) default NULL,
+  `sbsa` varchar(20) default NULL,
+  `sbsad` varchar(20) default NULL,
+  `edv` varchar(20) default NULL,
+  `edvd` varchar(20) default NULL,
+  `bsac` varchar(20) default NULL,
+  `bsacd` varchar(20) default NULL,
+  `lvmass` varchar(20) default NULL,
+  `lvmassd` varchar(20) default NULL,
+  `mass` varchar(20) default NULL,
+  `massd` varchar(20) default NULL,
+  `rwt` varchar(20) default NULL,
+  `rwtd` varchar(20) default NULL,
+  `fract` varchar(20) default NULL,
+  `midwall` varchar(20) default NULL,
+  `eject` varchar(20) default NULL,
+  `biplane` varchar(20) default NULL,
+  `anterior` varchar(20) default NULL,
+  `anteroseptal` varchar(20) default NULL,
+  `inferoseptal` varchar(20) default NULL,
+  `inferor` varchar(20) default NULL,
+  `inferolateral` varchar(20) default NULL,
+  `anterolateral` varchar(20) default NULL,
+  `midanterior` varchar(20) default NULL,
+  `midanteroseptal` char(2) default NULL,
+  `midinferoseptal` varchar(20) default NULL,
+  `midinferior` varchar(20) default NULL,
+  `midinfero` varchar(20) default NULL,
+  `midanterolateral` char(1) default NULL,
+  `apseptal` varchar(20) default NULL,
+  `apinferior` varchar(20) default NULL,
+  `aplateral` varchar(20) default NULL,
+  `apex` varchar(20) default NULL,
+  `gls` varchar(20) default NULL,
+  `gcs` varchar(20) default NULL,
+  `grs` varchar(20) default NULL,
+  `intra` varchar(20) default NULL,
+  `inter` varchar(20) default NULL,
+  `asyns` varchar(20) default NULL,
+  `lvpet` varchar(20) default NULL,
+  `rvpet` varchar(20) default NULL,
+  `ivrt` varchar(20) default NULL,
+  `ea` varchar(20) default NULL,
+  `emitral` varchar(20) default NULL,
+  `amitra` varchar(29) default NULL,
+  `dt` varchar(20) default NULL,
+  `adur` varchar(20) default NULL,
+  `pvs` varchar(20) default NULL,
+  `pvardur` varchar(20) default NULL,
+  `septale` varchar(20) default NULL,
+  `septaled` varchar(20) default NULL,
+  `laterale` varchar(20) default NULL,
+  `lateraled` varchar(20) default NULL,
+  `vp` varchar(20) default NULL,
+  `septalc` varchar(20) default NULL,
+  `lateralc` varchar(20) default NULL,
+  `avege` varchar(20) default NULL,
+  `dtlv` varchar(20) default NULL,
+  `inflow` varchar(20) default NULL,
+  `rrv` varchar(20) default NULL,
+  `rmid` varchar(20) default NULL,
+  `rapex` varchar(20) default NULL,
+  `proximal` varchar(20) default NULL,
+  `proximald` varchar(20) default NULL,
+  `distal` varchar(20) default NULL,
+  `pulmonic` varchar(20) default NULL,
+  `thickness` varchar(20) default NULL,
+  `ivc` varchar(20) default NULL,
+  `rdis` varchar(20) default NULL,
+  `rsys` varchar(20) default NULL,
+  `rfac` varchar(20) default NULL,
+  `rtapse` varchar(20) default NULL,
+  `tdi` varchar(20) default NULL,
+  `mpi` varchar(20) default NULL,
+  `rdp` varchar(20) default NULL,
+  `rvelo` varchar(20) default NULL,
+  `pr` varchar(20) default NULL,
+  `vmax` varchar(20) default NULL,
+  `rap` char(1) default NULL,
+  `spapv` char(1) default NULL,
+  `dpap` varchar(20) default NULL,
+  `mpap` varchar(20) default NULL,
+  `triscuspid` varchar(20) default NULL,
+  `intraventri` varchar(20) default NULL,
+  `intraventrid` varchar(20) default NULL,
+  `intraventric` varchar(20) default NULL,
+  `intraventricd` varchar(20) default NULL,
+  `cuspida` char(1) default NULL,
+  `cuspidb` char(1) default NULL,
+  `cuspidc` char(1) default NULL,
+  `cuspidd` char(1) default NULL,
+  `normal` char(1) default NULL,
+  `calci` char(1) default NULL,
+  `mild` char(1) default NULL,
+  `moderate` char(1) default NULL,
+  `severe` char(1) default NULL,
+  `rheumatic` char(1) default NULL,
+  `short` char(1) default NULL,
+  `thick` char(1) default NULL,
+  `sclereotic` char(1) default NULL,
+  `lain` varchar(40) default NULL,
+  `vstenosis` char(1) default NULL,
+  `substenosis` char(1) default NULL,
+  `supra` char(1) default NULL,
+  `vege` char(1) default NULL,
+  `tumor` char(1) default NULL,
+  `avadua` varchar(20) default NULL,
+  `avatiga` varchar(20) default NULL,
+  `replacece` char(1) default NULL,
+  `rep` char(1) default NULL,
+  `mechanical` char(1) default NULL,
+  `leaflet` char(1) default NULL,
+  `titingdisk` char(1) default NULL,
+  `caged` char(1) default NULL,
+  `bios` char(1) default NULL,
+  `stendted` char(1) default NULL,
+  `stenlesss` char(1) default NULL,
+  `percutness` char(1) default NULL,
+  `proste` varchar(20) default NULL,
+  `noemald` char(1) default NULL,
+  `abnornal` char(1) default NULL,
+  `fungsional` char(1) default NULL,
+  `severity` char(1) default NULL,
+  `midd` char(1) default NULL,
+  `moderated` char(1) default NULL,
+  `severee` char(1) default NULL,
+  `thropmus` char(1) default NULL,
+  `pannus` char(1) default NULL,
+  `dehsisence` char(1) default NULL,
+  `rocking` char(1) default NULL,
+  `abscess` char(1) default NULL,
+  `dopav` varchar(20) default NULL,
+  `dopmax` varchar(20) default NULL,
+  `dopmean` varchar(20) default NULL,
+  `dopvti` varchar(20) default NULL,
+  `dopava` varchar(20) default NULL,
+  `dopvmax` varchar(20) default NULL,
+  `doppht` varchar(20) default NULL,
+  `doplvot` varchar(20) default NULL,
+  `dopsv` varchar(20) default NULL,
+  `dopao` varchar(20) default NULL,
+  `dopaivc` varchar(20) default NULL,
+  `doperoa` varchar(20) default NULL,
+  `dopdvi` varchar(20) default NULL,
+  `dopat` varchar(20) default NULL,
+  `dopeoa` varchar(20) default NULL,
+  `mnormal` char(1) default NULL,
+  `mregulasi` char(1) default NULL,
+  `mcar` char(1) default NULL,
+  `mcartypea` char(1) default NULL,
+  `mcartypeb` char(1) default NULL,
+  `mcartypec` char(1) default NULL,
+  `mcartyped` char(1) default NULL,
+  `stenosis` char(1) default NULL,
+  `rheuma` char(1) default NULL,
+  `nonrheuma` varchar(20) default NULL,
+  `mseverity` char(1) default NULL,
+  `mmild` char(1) default NULL,
+  `mmoderate` char(1) default NULL,
+  `mseveme` char(1) default NULL,
+  `mvege` char(1) default NULL,
+  `mtumor` char(1) default NULL,
+  `mabses` char(1) default NULL,
+  `mperforation` char(1) default NULL,
+  `mmva` varchar(20) default NULL,
+  `mmvad` varchar(20) default NULL,
+  `mlvot` varchar(20) default NULL,
+  `mplace` char(1) default NULL,
+  `mrepair` char(1) default NULL,
+  `mring` char(1) default NULL,
+  `mpercut` char(1) default NULL,
+  `mmechanical` char(1) default NULL,
+  `mbileaf` char(1) default NULL,
+  `mtiting` char(1) default NULL,
+  `mcaged` char(1) default NULL,
+  `mbio` char(1) default NULL,
+  `mstented` char(1) default NULL,
+  `mless` char(1) default NULL,
+  `mprossize` varchar(20) default NULL,
+  `mnormald` char(1) default NULL,
+  `mabnormal` char(1) default NULL,
+  `mthrombus` char(1) default NULL,
+  `mpannus` char(1) default NULL,
+  `mdehis` char(1) default NULL,
+  `mrocking` char(1) default NULL,
+  `mabsess` char(1) default NULL,
+  `dmpak` varchar(20) default NULL,
+  `dmmv` varchar(20) default NULL,
+  `dmpg` varchar(20) default NULL,
+  `dmvti` varchar(20) default NULL,
+  `dmpht` varchar(20) default NULL,
+  `dmphtd` varchar(20) default NULL,
+  `meroa` varchar(20) default NULL,
+  `dpmvc` varchar(20) default NULL,
+  `dpmreversal` varchar(20) default NULL,
+  `dpmdvi` varchar(20) default NULL,
+  `pnormal` char(1) default NULL,
+  `pcalcied` char(1) default NULL,
+  `pmild` char(1) default NULL,
+  `pmoderat` char(1) default NULL,
+  `msevere` char(1) default NULL,
+  `prhematic` char(1) default NULL,
+  `pshort` char(1) default NULL,
+  `pthick` char(1) default NULL,
+  `psclerotic` char(1) default NULL,
+  `plain` varchar(20) default NULL,
+  `pvege` char(1) default NULL,
+  `ptumor` char(1) default NULL,
+  `preplace` char(1) default NULL,
+  `prepair` char(1) default NULL,
+  `pmechanical` char(1) default NULL,
+  `pbolefleat` char(1) default NULL,
+  `ptiting` char(1) default NULL,
+  `pcagef` char(1) default NULL,
+  `pbioprorthic` char(1) default NULL,
+  `pstenless` char(1) default NULL,
+  `pprohtic` varchar(29) default NULL,
+  `pnormald` char(1) default NULL,
+  `pabnormal` char(1) default NULL,
+  `pfungsi` char(1) default NULL,
+  `pseverity` char(1) default NULL,
+  `pmid` char(1) default NULL,
+  `pmoderate` char(1) default NULL,
+  `psevere` char(1) default NULL,
+  `pthrombus` char(1) default NULL,
+  `ppannus` char(1) default NULL,
+  `pdehis` char(1) default NULL,
+  `procking` char(1) default NULL,
+  `pabsecc` char(1) default NULL,
+  `dppv` varchar(20) default NULL,
+  `dppvmean` varchar(20) default NULL,
+  `ppht` varchar(29) default NULL,
+  `pdminance` char(1) default NULL,
+  `dpblunting` char(1) default NULL,
+  `preversal` char(1) default NULL,
+  `dperoa` varchar(20) default NULL,
+  `dppvacc` varchar(20) default NULL,
+  `dppr` varchar(20) default NULL,
+  `tnormal` char(1) default NULL,
+  `tcalci` char(1) default NULL,
+  `tmild` char(1) default NULL,
+  `tmoderate` char(1) default NULL,
+  `tsevere` char(1) default NULL,
+  `trheumatic` char(1) default NULL,
+  `tshort` char(1) default NULL,
+  `tthick` char(1) default NULL,
+  `tscerotic` char(1) default NULL,
+  `tlain` varchar(20) default NULL,
+  `tvege` char(1) default NULL,
+  `ttumor` char(1) default NULL,
+  `treplace` char(1) default NULL,
+  `trepair` char(1) default NULL,
+  `tmechanec` char(1) default NULL,
+  `tbleafet` char(1) default NULL,
+  `ttilting` char(1) default NULL,
+  `tcaged` char(1) default NULL,
+  `tbioppros` char(1) default NULL,
+  `tstented` char(1) default NULL,
+  `tless` char(1) default NULL,
+  `tprossize` varchar(20) default NULL,
+  `tnprmald` char(1) default NULL,
+  `tabnormal` char(1) default NULL,
+  `tfungsi` char(1) default NULL,
+  `tsevered` char(1) default NULL,
+  `tmid` char(1) default NULL,
+  `tmoderated` char(1) default NULL,
+  `tseveredd` char(1) default NULL,
+  `tthrombus` char(1) default NULL,
+  `tpanuus` char(1) default NULL,
+  `tdehis` char(1) default NULL,
+  `trocking` char(1) default NULL,
+  `tabsess` char(1) default NULL,
+  `dtpht` varchar(20) default NULL,
+  `dtdvi` varchar(20) default NULL,
+  `dtpeak` varchar(20) default NULL,
+  `dtmean` varchar(20) default NULL,
+  `dttr` varchar(20) default NULL,
+  `dthepatic` varchar(20) default NULL,
+  `atrial` varchar(20) default NULL,
+  `atrialD` varchar(20) default NULL,
+  `valsava` varchar(20) default NULL,
+  `valsavad` varchar(20) default NULL,
+  `sino` varchar(20) default NULL,
+  `sinod` varchar(20) default NULL,
+  `tubular` varchar(20) default NULL,
+  `tubulard` varchar(20) default NULL,
+  `aprtic` varchar(20) default NULL,
+  `aorticd` varchar(20) default NULL,
+  `aorticroot` char(1) default NULL,
+  `distribusi` varchar(20) default NULL,
+  `circum` varchar(20) default NULL,
+  `fibrin` char(1) default NULL,
+  `perimass` char(1) default NULL,
+  `perira` char(1) default NULL,
+  `perirv` char(1) default NULL,
+  `varia` varchar(20) default NULL,
+  `perimitral` varchar(20) default NULL,
+  `prominent` char(1) default NULL,
+  `masslokasi` char(1) default NULL,
+  `erode` char(1) default NULL,
+  `hemody` char(1) default NULL,
+  `masssize` varchar(20) default NULL,
+  `situs` varchar(20) default NULL,
+  `katrio` varchar(20) default NULL,
+  `kventri` varchar(20) default NULL,
+  `kpulmo` varchar(20) default NULL,
+  `kcoronay` varchar(20) default NULL,
+  `kplsvc` varchar(20) default NULL,
+  `keta` varchar(20) default NULL,
+  `ketb` varchar(20) default NULL,
+  `ketc` varchar(20) default NULL,
+  `ketd` varchar(20) default NULL,
+  `kositus` varchar(29) default NULL,
+  `koatrio` varchar(20) default NULL,
+  `koventri` varchar(20) default NULL,
+  `kodrainage` varchar(20) default NULL,
+  `kosinus` char(1) default NULL,
+  `koplsvc` char(1) default NULL,
+  `kotipeasd` varchar(20) default NULL,
+  `koshunt` varchar(20) default NULL,
+  `koqp` varchar(20) default NULL,
+  `komulti` char(1) default NULL,
+  `kodirec` char(1) default NULL,
+  `kooqs` varchar(20) default NULL,
+  `koqpd` varchar(29) default NULL,
+  `koresidu` char(1) default NULL,
+  `kosize` varchar(20) default NULL,
+  `kodiresid` char(1) default NULL,
+  `kolain` varchar(20) default NULL,
+  `kovsdtipe` varchar(20) default NULL,
+  `kovsdsize` varchar(20) default NULL,
+  `kovsdfind` varchar(20) default NULL,
+  `kovsdmulti` char(1) default NULL,
+  `kovsddiecksi` char(1) default NULL,
+  `kovsdtrans` varchar(20) default NULL,
+  `kovsdket` varchar(20) default NULL,
+  `kocloureshunt` char(1) default NULL,
+  `koclouresize` varchar(20) default NULL,
+  `koclourelain` varchar(20) default NULL,
+  `koclouredireksi` char(1) default NULL,
+  `koclourevsd` varchar(20) default NULL,
+  `pdatipe` varchar(20) default NULL,
+  `pdaao` varchar(20) default NULL,
+  `pdashunt` char(1) default NULL,
+  `pdadiesi` char(1) default NULL,
+  `pdasixe` varchar(20) default NULL,
+  `pdalain` varchar(20) default NULL,
+  `acresidual` char(1) default NULL,
+  `acsize` varchar(20) default NULL,
+  `aclpa` char(1) default NULL,
+  `acaorta` char(1) default NULL,
+  `acshunt` varchar(20) default NULL,
+  `gradient` varchar(20) default NULL,
+  `gradientd` varchar(20) default NULL,
+  `acaogradient` varchar(20) default NULL,
+  `aclain` varchar(20) default NULL,
+  `kola` varchar(20) default NULL,
+  `koaorta` varchar(20) default NULL,
+  `koao` varchar(20) default NULL,
+  `ivsd` varchar(20) default NULL,
+  `ivs` varchar(20) default NULL,
+  `lved` varchar(20) default NULL,
+  `lves` varchar(20) default NULL,
+  `pwd` varchar(20) default NULL,
+  `pws` varchar(20) default NULL,
+  `kosystolic` varchar(20) default NULL,
+  `kobsa` varchar(20) default NULL,
+  `kodiastolic` varchar(20) default NULL,
+  `kosytolic` varchar(20) default NULL,
+  `kolvmas` varchar(20) default NULL,
+  `kolvmassbsa` varchar(20) default NULL,
+  `rwat` varchar(20) default NULL,
+  `teich` varchar(20) default NULL,
+  `simpsons` varchar(20) default NULL,
+  `motion` char(1) default NULL,
+  `koivrt` varchar(20) default NULL,
+  `koea` varchar(20) default NULL,
+  `komitral` varchar(20) default NULL,
+  `kodt` varchar(20) default NULL,
+  `koadur` varchar(20) default NULL,
+  `koseptal` varchar(20) default NULL,
+  `koseptala` varchar(20) default NULL,
+  `kolateral` varchar(20) default NULL,
+  `kolaterala` varchar(20) default NULL,
+  `kolavi` varchar(20) default NULL,
+  `kobasal` varchar(20) default NULL,
+  `komidrv` varchar(20) default NULL,
+  `koapaex` varchar(20) default NULL,
+  `kotapse` varchar(20) default NULL,
+  `kothromus` char(1) default NULL,
+  `knumber` varchar(20) default NULL,
+  `kopsatu` varchar(10) default NULL,
+  `kopdua` varchar(10) default NULL,
+  `koptiga` varchar(10) default NULL,
+  `kolsatu` char(1) default NULL,
+  `koldua` varchar(10) default NULL,
+  `koltiga` varchar(10) default NULL,
+  `kotr` char(1) default NULL,
+  `kots` char(1) default NULL,
+  `koisitr` varchar(20) default NULL,
+  `koisits` varchar(20) default NULL,
+  `kovmax` varchar(10) default NULL,
+  `kotvi` varchar(10) default NULL,
+  `kop` varchar(10) default NULL,
+  `komr` char(1) default NULL,
+  `qkomil` char(1) default NULL,
+  `qkomoderate` char(1) default NULL,
+  `kqosvent` char(1) default NULL,
+  `kovena` varchar(20) default NULL,
+  `koeroa` varchar(20) default NULL,
+  `kothrs` varchar(20) default NULL,
+  `koms` char(1) default NULL,
+  `msmild` char(1) default NULL,
+  `komsmoderate` char(1) default NULL,
+  `komssevent` char(1) default NULL,
+  `kopht` varchar(20) default NULL,
+  `komeangr` varchar(20) default NULL,
+  `kospap` varchar(20) default NULL,
+  `komva` varchar(20) default NULL,
+  `kopisa` varchar(20) default NULL,
+  `mslain` varchar(20) default NULL,
+  `kopr` char(1) default NULL,
+  `kops` char(1) default NULL,
+  `prmild` char(1) default NULL,
+  `prmoderate` char(1) default NULL,
+  `koprsevent` char(1) default NULL,
+  `infun` char(1) default NULL,
+  `vulv` char(1) default NULL,
+  `prpeak` varchar(20) default NULL,
+  `prsupra` char(1) default NULL,
+  `prpost` char(1) default NULL,
+  `prdiameter` varchar(20) default NULL,
+  `prlain` varchar(20) default NULL,
+  `prd` char(1) default NULL,
+  `asd` char(1) default NULL,
+  `asmild` char(1) default NULL,
+  `asmoderate` char(1) default NULL,
+  `assevent` char(1) default NULL,
+  `aspht` varchar(20) default NULL,
+  `asvena` varchar(20) default NULL,
+  `aseroa` varchar(20) default NULL,
+  `aslain` varchar(20) default NULL,
+  `asmildd` char(1) default NULL,
+  `asmoderated` char(1) default NULL,
+  `asseventd` char(1) default NULL,
+  `asjet` varchar(20) default NULL,
+  `asava` varchar(20) default NULL,
+  `asgrave` varchar(20) default NULL,
+  `aslaind` varchar(20) default NULL,
+  `atresia` char(1) default NULL,
+  `absemt` char(1) default NULL,
+  `biscuspid` char(1) default NULL,
+  `cflame` char(1) default NULL,
+  `isiflame` varchar(20) default NULL,
+  `greatdpa` varchar(20) default NULL,
+  `greatrpa` varchar(20) default NULL,
+  `aocus` char(1) default NULL,
+  `coa` char(1) default NULL,
+  `aoadir` varchar(20) default NULL,
+  `istumus` varchar(20) default NULL,
+  `aoddirek` varchar(20) default NULL,
+  `gradsuent` varchar(20) default NULL,
+  `othrs` varchar(100) default NULL,
+  `apanterior` varchar(10) default NULL,
+  `stented` char(1) default NULL,
+  `vein` char(1) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `echokardiologisatu`
+--
+
+
+/*!40000 ALTER TABLE `echokardiologisatu` DISABLE KEYS */;
+LOCK TABLES `echokardiologisatu` WRITE;
+INSERT INTO `echokardiologisatu` VALUES ('0000000017','00000002','','','','','','','','','','',' 1','',' 2','',' 2','','','',' 1',' 2','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''),('0000000014','00000001',' 10','','20','','12','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `echokardiologisatu` ENABLE KEYS */;
 
 --
 -- Table structure for table `elektrofisiologi`
@@ -141,8 +1414,194 @@ CREATE TABLE `elektrofisiologi` (
 
 /*!40000 ALTER TABLE `elektrofisiologi` DISABLE KEYS */;
 LOCK TABLES `elektrofisiologi` WRITE;
+INSERT INTO `elektrofisiologi` VALUES ('0000000013','00000002','2018-06-05',40,'YOPI',0,0,0),('0000000007','00000007','2018-06-05',10,'ILYAS',0,0,0);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `elektrofisiologi` ENABLE KEYS */;
+
+--
+-- Table structure for table `elektrosatu`
+--
+
+DROP TABLE IF EXISTS `elektrosatu`;
+CREATE TABLE `elektrosatu` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `sinus` char(1) default NULL,
+  `grade` char(1) default NULL,
+  `heart` char(1) default NULL,
+  `ventri` char(1) default NULL,
+  `conges` char(1) default NULL,
+  `lainya` varchar(40) default NULL,
+  `normal` char(1) default NULL,
+  `lb` char(1) default NULL,
+  `rb` char(1) default NULL,
+  `vcd` char(1) default NULL,
+  `durasi` varchar(10) default NULL,
+  `poor` char(1) default NULL,
+  `lve` varchar(20) default NULL,
+  `ef` varchar(20) default NULL,
+  `la` varchar(20) default NULL,
+  `lainyad` varchar(20) default NULL,
+  `schamber` char(1) default NULL,
+  `icd` char(1) default NULL,
+  `p` char(1) default NULL,
+  `d` char(1) default NULL,
+  `tronic` char(1) default NULL,
+  `jude` char(1) default NULL,
+  `bio` char(1) default NULL,
+  `lainyac` varchar(50) default NULL,
+  `dchamber` char(1) default NULL,
+  `duachamber` char(1) default NULL,
+  `pacing` char(1) default NULL,
+  `aai` char(1) default NULL,
+  `vvi` char(1) default NULL,
+  `ddd` char(1) default NULL,
+  `air` char(1) default NULL,
+  `vir` char(1) default NULL,
+  `ddr` char(1) default NULL,
+  `ra` char(1) default NULL,
+  `rv` char(1) default NULL,
+  `apex` char(1) default NULL,
+  `septum` char(1) default NULL,
+  `lv` char(1) default NULL,
+  `cs` char(1) default NULL,
+  `posterior` char(1) default NULL,
+  `anterior` char(1) default NULL,
+  `lateral` char(1) default NULL,
+  `epicardial` char(1) default NULL,
+  `lain` varchar(50) default NULL,
+  `atrial` varchar(40) default NULL,
+  `ventricle` varchar(50) default NULL,
+  `csd` varchar(50) default NULL,
+  `atriald` varchar(50) default NULL,
+  `ventriceld` varchar(50) default NULL,
+  `atrialc` varchar(50) default NULL,
+  `ventrik` varchar(50) default NULL,
+  `csk` char(1) default NULL,
+  `af` char(1) default NULL,
+  `parox` char(1) default NULL,
+  `permanent` char(1) default NULL,
+  `aves` char(1) default NULL,
+  `avnrt` char(1) default NULL,
+  `typical` char(1) default NULL,
+  `atypical` char(1) default NULL,
+  `ap` char(1) default NULL,
+  `manifest` char(1) default NULL,
+  `canceal` char(1) default NULL,
+  `vt` char(1) default NULL,
+  `ilvt` char(1) default NULL,
+  `anteriord` char(1) default NULL,
+  `posteriord` char(1) default NULL,
+  `laink` varchar(50) default NULL,
+  `tract` char(1) default NULL,
+  `rvot` char(1) default NULL,
+  `lvot` char(1) default NULL,
+  `ao` char(1) default NULL,
+  `pul` char(1) default NULL,
+  `scar` char(1) default NULL,
+  `lvf` char(1) default NULL,
+  `rvd` char(1) default NULL,
+  `laing` varchar(50) default NULL,
+  `location` char(1) default NULL,
+  `klateral` char(1) default NULL,
+  `ksuperior` char(1) default NULL,
+  `kseptip` char(1) default NULL,
+  `rseptil` char(1) default NULL,
+  `rlateral` char(1) default NULL,
+  `rsuperior` char(1) default NULL,
+  `lainh` varchar(50) default NULL,
+  `afg` char(1) default NULL,
+  `paroxsymal` char(1) default NULL,
+  `permanentd` char(1) default NULL,
+  `ep` char(1) default NULL,
+  `snd` char(1) default NULL,
+  `avn` char(1) default NULL,
+  `at` char(1) default NULL,
+  `fluther` char(1) default NULL,
+  `cti` char(1) default NULL,
+  `wse` char(1) default NULL,
+  `wiseclock` char(1) default NULL,
+  `ctid` char(1) default NULL,
+  `ai` char(1) default NULL,
+  `svt` char(1) default NULL,
+  `flutherd` char(1) default NULL,
+  `ate` char(1) default NULL,
+  `pvc` char(1) default NULL,
+  `vtf` char(1) default NULL,
+  `sndf` char(1) default NULL,
+  `avb` char(1) default NULL,
+  `las` char(1) default NULL,
+  `ledd` char(1) default NULL,
+  `efg` char(1) default NULL,
+  `carto` char(1) default NULL,
+  `snrt` varchar(40) default NULL,
+  `csnrt` varchar(40) default NULL,
+  `ah` varchar(40) default NULL,
+  `hv` varchar(40) default NULL,
+  `qrs` varchar(40) default NULL,
+  `avbcl` varchar(40) default NULL,
+  `averp` varchar(40) default NULL,
+  `jump` varchar(40) default NULL,
+  `atrialerp` varchar(40) default NULL,
+  `beat` char(1) default NULL,
+  `vakondisi` char(1) default NULL,
+  `decremental` char(1) default NULL,
+  `ventrilerp` varchar(40) default NULL,
+  `delta` char(1) default NULL,
+  `ant` varchar(40) default NULL,
+  `graded` varchar(40) default NULL,
+  `bcl` varchar(40) default NULL,
+  `pag` varchar(40) default NULL,
+  `avg` varchar(40) default NULL,
+  `decrementalk` char(1) default NULL,
+  `vabcl` varchar(40) default NULL,
+  `provo` char(1) default NULL,
+  `terenol` char(1) default NULL,
+  `atropin` char(1) default NULL,
+  `sedation` char(1) default NULL,
+  `tachcardia` char(1) default NULL,
+  `nonsusteined` char(1) default NULL,
+  `sustainded` char(1) default NULL,
+  `vreset` char(1) default NULL,
+  `advent` char(1) default NULL,
+  `noadvent` char(1) default NULL,
+  `ventraiment` char(1) default NULL,
+  `responce` char(1) default NULL,
+  `vav` char(1) default NULL,
+  `vaav` char(1) default NULL,
+  `ppi` varchar(40) default NULL,
+  `vapacing` varchar(40) default NULL,
+  `parah` char(1) default NULL,
+  `lainj` varchar(40) default NULL,
+  `irigarting` char(1) default NULL,
+  `noniri` char(1) default NULL,
+  `antegrade` char(1) default NULL,
+  `retro` char(1) default NULL,
+  `ablation` varchar(40) default NULL,
+  `puncture` char(1) default NULL,
+  `abalation` char(1) default NULL,
+  `tamponade` char(1) default NULL,
+  `electrik` varchar(40) default NULL,
+  `fistula` varchar(40) default NULL,
+  `hematom` varchar(40) default NULL,
+  `rupture` varchar(40) default NULL,
+  `stroke` char(1) default NULL,
+  `pis` char(1) default NULL,
+  `emboli` char(1) default NULL,
+  `lainl` varchar(40) default NULL,
+  `namadokter` varchar(50) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `elektrosatu`
+--
+
+
+/*!40000 ALTER TABLE `elektrosatu` DISABLE KEYS */;
+LOCK TABLES `elektrosatu` WRITE;
+INSERT INTO `elektrosatu` VALUES ('0000000013','00000002','A','A','A','A','','','A','A','A','A','','A','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''),('0000000007','00000007','A','A','A','','','','A','A','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `elektrosatu` ENABLE KEYS */;
 
 --
 -- Table structure for table `icd`
@@ -179,7 +1638,8 @@ CREATE TABLE `icu` (
   `nama` varchar(70) default NULL,
   `bb` float default NULL,
   `tb` float default NULL,
-  `bmi` float default NULL
+  `bmi` float default NULL,
+  `kodep` varchar(15) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -189,96 +1649,9 @@ CREATE TABLE `icu` (
 
 /*!40000 ALTER TABLE `icu` DISABLE KEYS */;
 LOCK TABLES `icu` WRITE;
+INSERT INTO `icu` VALUES ('0000000005','00000004','2018-06-05',38,'TRENA WIJAYA',0,0,0,''),('0000000011','00000003','2018-06-05',18,'PITBULL',0,0,0,'');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `icu` ENABLE KEYS */;
-
---
--- Table structure for table `icuanamnesis`
---
-
-DROP TABLE IF EXISTS `icuanamnesis`;
-CREATE TABLE `icuanamnesis` (
-  `idperiksa` varchar(20) default '0',
-  `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `Dyspnea` char(1) default NULL,
-  `Angina` char(1) default NULL,
-  `Palpitasi` char(1) default NULL,
-  `Sinkop` char(1) default NULL,
-  `Tungkai` char(1) default NULL,
-  `Edema` char(1) default NULL,
-  `Lainnya` char(1) default NULL,
-  `isilainnya` varchar(80) default NULL,
-  `Merokok` char(1) default NULL,
-  `Obesitas` char(1) default NULL,
-  `DM` char(1) default NULL,
-  `Hipertensi` char(1) default NULL,
-  `Dislipidemia` char(1) default NULL,
-  `riwayat` char(1) default NULL,
-  `duabelas` char(1) default NULL,
-  `duaempat` char(1) default NULL,
-  `empatdelapan` char(1) default NULL,
-  `lebihempatdelapan` char(1) default NULL,
-  `Aspirin` char(1) default NULL,
-  `Clopidogrel` char(1) default NULL,
-  `Ticagrelor` char(1) default NULL,
-  `ACE` char(1) default NULL,
-  `ARB` char(1) default NULL,
-  `BB` char(1) default NULL,
-  `MRA` char(1) default NULL,
-  `Diuretik` char(1) default NULL,
-  `VKA` char(1) default NULL,
-  `NOAC` char(1) default NULL,
-  `Digoxin` char(1) default NULL,
-  `Amiodaron` char(1) default NULL,
-  `Profilaksis` char(1) default NULL,
-  `isiProfilaksis` varchar(70) default NULL,
-  `Lainya` char(1) default NULL,
-  `isilainya` varchar(89) default NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `icuanamnesis`
---
-
-
-/*!40000 ALTER TABLE `icuanamnesis` DISABLE KEYS */;
-LOCK TABLES `icuanamnesis` WRITE;
-UNLOCK TABLES;
-/*!40000 ALTER TABLE `icuanamnesis` ENABLE KEYS */;
-
---
--- Table structure for table `icucharge`
---
-
-DROP TABLE IF EXISTS `icucharge`;
-CREATE TABLE `icucharge` (
-  `idperiksa` varchar(20) default '0',
-  `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `discharge` date default NULL,
-  `sembuh` char(1) default NULL,
-  `perbaikan` char(1) default NULL,
-  `pulang` char(1) default NULL,
-  `meninggal` char(1) default NULL,
-  `meninggald` char(1) default NULL,
-  `Aritmia` char(1) default NULL,
-  `Syok` char(1) default NULL,
-  `Infeksi` char(1) default NULL,
-  `Gagal` char(1) default NULL,
-  `lain` char(1) default NULL,
-  `isilain` varchar(40) default NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `icucharge`
---
-
-
-/*!40000 ALTER TABLE `icucharge` DISABLE KEYS */;
-LOCK TABLES `icucharge` WRITE;
-UNLOCK TABLES;
-/*!40000 ALTER TABLE `icucharge` ENABLE KEYS */;
 
 --
 -- Table structure for table `icudiagnosa`
@@ -288,8 +1661,10 @@ DROP TABLE IF EXISTS `icudiagnosa`;
 CREATE TABLE `icudiagnosa` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `kodep` varchar(20) default NULL
+  `kodep` varchar(15) default NULL,
+  `icd` varchar(50) default NULL,
+  `nama` varchar(70) default NULL,
+  `tgl` date default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -299,8 +1674,39 @@ CREATE TABLE `icudiagnosa` (
 
 /*!40000 ALTER TABLE `icudiagnosa` DISABLE KEYS */;
 LOCK TABLES `icudiagnosa` WRITE;
+INSERT INTO `icudiagnosa` VALUES ('0000000005','00000004','','','TRENA WIJAYA','2018-06-05'),('0000000011','00000003','','','PITBULL','2018-06-05');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `icudiagnosa` ENABLE KEYS */;
+
+--
+-- Table structure for table `icudischarge`
+--
+
+DROP TABLE IF EXISTS `icudischarge`;
+CREATE TABLE `icudischarge` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `tgl` date default NULL,
+  `tgldischarge` date default NULL,
+  `outcome` varchar(25) default NULL,
+  `aritmia` char(1) default NULL,
+  `syok` char(1) default NULL,
+  `infeksi` char(1) default NULL,
+  `gagal` char(1) default NULL,
+  `lainnya` varchar(30) default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `icudischarge`
+--
+
+
+/*!40000 ALTER TABLE `icudischarge` DISABLE KEYS */;
+LOCK TABLES `icudischarge` WRITE;
+INSERT INTO `icudischarge` VALUES ('0000000005','00000004','2018-06-05','1899-12-30','','','','','','','TRENA WIJAYA'),('0000000011','00000003','2018-06-05','1899-12-30','','','','','','','PITBULL');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `icudischarge` ENABLE KEYS */;
 
 --
 -- Table structure for table `icuekg`
@@ -311,44 +1717,39 @@ CREATE TABLE `icuekg` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `Ritme` char(1) default NULL,
-  `Takikardi` char(1) default NULL,
-  `Bradikardi` char(1) default NULL,
-  `fibrilasi` char(1) default NULL,
-  `AVNRT` char(1) default NULL,
-  `AVRT` char(1) default NULL,
-  `VT` char(1) default NULL,
-  `Axis` char(1) default NULL,
-  `Rate` char(1) default NULL,
-  `isirate` varchar(20) default NULL,
-  `PR` char(1) default NULL,
-  `isipr` varchar(20) default NULL,
-  `qtd` char(1) default NULL,
-  `isiqtd` char(1) default NULL,
-  `depresi` char(1) default NULL,
-  `isidepresi` varchar(20) default NULL,
+  `ritme` char(1) default NULL,
+  `takikardi` char(1) default NULL,
+  `bradikardi` char(1) default NULL,
+  `atrial` char(1) default NULL,
+  `avnrt` char(1) default NULL,
+  `avrt` char(1) default NULL,
+  `vt` char(1) default NULL,
   `avblock` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
   `lad` char(1) default NULL,
-  `wave` char(1) default NULL,
-  `isiwave` varchar(20) default NULL,
-  `qt` char(1) default NULL,
-  `isiqt` varchar(20) default NULL,
-  `qpat` char(1) default NULL,
-  `isiqpat` varchar(20) default NULL,
-  `inversi` char(1) default NULL,
-  `isiinversi` char(2) default NULL,
-  `lainya` char(1) default NULL,
-  `isilainya` varchar(20) default NULL,
-  `rad` char(1) default NULL,
+  `rad` varchar(10) default NULL,
+  `superoir` varchar(10) default NULL,
+  `durasi` varchar(10) default NULL,
+  `qpat` varchar(10) default NULL,
+  `rbb` varchar(10) default NULL,
+  `lbb` varchar(10) default NULL,
+  `vcd` varchar(10) default NULL,
+  `rate` varchar(10) default NULL,
+  `elektrik` char(2) default NULL,
+  `depresi` char(2) default NULL,
+  `elevasi` char(2) default NULL,
+  `pwa` char(1) default NULL,
+  `isipwa` varchar(10) default NULL,
   `pwd` char(1) default NULL,
-  `isipwd` varchar(20) default NULL,
-  `durasi` char(1) default NULL,
-  `isidurasi` varchar(20) default NULL,
-  `elevasi` char(1) default NULL,
-  `isielevasi` varchar(20) default NULL,
-  `lvh` char(1) default NULL,
-  `isilvh` varchar(20) default NULL,
-  `superior` char(1) default NULL
+  `isipwd` varchar(10) default NULL,
+  `normal` char(1) default NULL,
+  `inversi` char(1) default NULL,
+  `ttall` char(1) default NULL,
+  `isiprinterval` varchar(10) default NULL,
+  `isiqt` varchar(10) default NULL,
+  `isirr` varchar(10) default NULL,
+  `isical` varchar(10) default NULL,
+  `nama` varchar(78) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -358,39 +1759,98 @@ CREATE TABLE `icuekg` (
 
 /*!40000 ALTER TABLE `icuekg` DISABLE KEYS */;
 LOCK TABLES `icuekg` WRITE;
+INSERT INTO `icuekg` VALUES ('0000000005','00000004','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','TRENA WIJAYA'),('0000000011','00000003','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','PITBULL');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `icuekg` ENABLE KEYS */;
 
 --
--- Table structure for table `icukomplikasi`
+-- Table structure for table `icuelektik`
 --
 
-DROP TABLE IF EXISTS `icukomplikasi`;
-CREATE TABLE `icukomplikasi` (
+DROP TABLE IF EXISTS `icuelektik`;
+CREATE TABLE `icuelektik` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `VT` char(1) default NULL,
-  `AF` char(1) default NULL,
-  `AVblock` char(1) default NULL,
-  `lainlain` char(1) default NULL,
-  `isilain` varchar(40) default NULL,
-  `Ventricular` char(1) default NULL,
-  `Ruptur` char(1) default NULL,
-  `wall` char(1) default NULL,
-  `lainlaind` char(1) default NULL,
-  `isilaind` varchar(40) default NULL
+  `vt` char(1) default NULL,
+  `af` char(1) default NULL,
+  `av` char(1) default NULL,
+  `lain` varchar(40) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `icukomplikasi`
+-- Dumping data for table `icuelektik`
 --
 
 
-/*!40000 ALTER TABLE `icukomplikasi` DISABLE KEYS */;
-LOCK TABLES `icukomplikasi` WRITE;
+/*!40000 ALTER TABLE `icuelektik` DISABLE KEYS */;
+LOCK TABLES `icuelektik` WRITE;
+INSERT INTO `icuelektik` VALUES ('0000000005','00000004','','','',''),('0000000011','00000003','','','','');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `icukomplikasi` ENABLE KEYS */;
+/*!40000 ALTER TABLE `icuelektik` ENABLE KEYS */;
+
+--
+-- Table structure for table `icufisik`
+--
+
+DROP TABLE IF EXISTS `icufisik`;
+CREATE TABLE `icufisik` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `jvp` char(1) default NULL,
+  `kardiomegali` char(1) default NULL,
+  `bj` char(1) default NULL,
+  `s3` char(1) default NULL,
+  `s4` char(1) default NULL,
+  `murmurreg` char(1) default NULL,
+  `murmurstenosis` char(1) default NULL,
+  `rhonkhi` char(1) default NULL,
+  `hepatomegali` char(1) default NULL,
+  `edema` char(1) default NULL,
+  `tgl` date default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `icufisik`
+--
+
+
+/*!40000 ALTER TABLE `icufisik` DISABLE KEYS */;
+LOCK TABLES `icufisik` WRITE;
+INSERT INTO `icufisik` VALUES ('0000000005','00000004','A','A','A','A','A','','','','','','2018-06-05','TRENA WIJAYA'),('0000000011','00000003','A','','','','','','','','','','2018-06-05','PITBULL');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `icufisik` ENABLE KEYS */;
+
+--
+-- Table structure for table `icukeluhan`
+--
+
+DROP TABLE IF EXISTS `icukeluhan`;
+CREATE TABLE `icukeluhan` (
+  `idperiksa` varchar(20) default NULL,
+  `idpasien` varchar(20) default NULL,
+  `sesak` char(1) default NULL,
+  `dada` char(1) default NULL,
+  `nyeri` char(1) default NULL,
+  `pingsan` char(1) default NULL,
+  `hampir` char(1) default NULL,
+  `sadar` char(1) default NULL,
+  `bengkai` char(1) default NULL,
+  `tungkai` char(1) default NULL,
+  `lemah` char(1) default NULL,
+  `lain` varchar(40) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `icukeluhan`
+--
+
+
+/*!40000 ALTER TABLE `icukeluhan` DISABLE KEYS */;
+LOCK TABLES `icukeluhan` WRITE;
+INSERT INTO `icukeluhan` VALUES ('0000000005','00000004','Y','','','Y','','Y','Y','Y','',''),('0000000011','00000003','Y','Y','Y','Y','Y','Y','Y','Y','Y','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `icukeluhan` ENABLE KEYS */;
 
 --
 -- Table structure for table `iculab`
@@ -437,7 +1897,8 @@ CREATE TABLE `iculab` (
   `fibrinogen` varchar(30) default NULL,
   `dimer` varchar(30) default NULL,
   `lainya` varchar(30) default NULL,
-  `nama` varchar(70) default NULL
+  `nama` varchar(70) default NULL,
+  `tropd` varchar(30) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -447,155 +1908,157 @@ CREATE TABLE `iculab` (
 
 /*!40000 ALTER TABLE `iculab` DISABLE KEYS */;
 LOCK TABLES `iculab` WRITE;
+INSERT INTO `iculab` VALUES ('0000000005','00000004','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','TRENA WIJAYA',''),('0000000011','00000003','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','PITBULL','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `iculab` ENABLE KEYS */;
 
 --
--- Table structure for table `icumendika`
+-- Table structure for table `icumedikamentosa`
 --
 
-DROP TABLE IF EXISTS `icumendika`;
-CREATE TABLE `icumendika` (
+DROP TABLE IF EXISTS `icumedikamentosa`;
+CREATE TABLE `icumedikamentosa` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `Antiplatelet` char(1) default NULL,
-  `Aspirin` char(1) default NULL,
-  `CPG` char(1) default NULL,
-  `Ticagrelor` char(1) default NULL,
-  `INOTROPIK` char(1) default NULL,
-  `Dobutamin` char(1) default NULL,
-  `Dopamin` char(1) default NULL,
-  `Sulfas` char(1) default NULL,
-  `Bicarbonat` char(1) default NULL,
-  `Magnesium` char(1) default NULL,
-  `Lidocaine` char(1) default NULL,
-  `Amiodaron` char(1) default NULL,
-  `Lainya` char(1) default NULL,
-  `isilainnya` varchar(50) default NULL,
-  `Antikoagulan` char(1) default NULL,
-  `UFH` char(1) default NULL,
-  `Enoxaparin` char(1) default NULL,
-  `Fondaparinux` char(1) default NULL,
-  `Vasopresin` char(1) default NULL,
-  `Norepinefrin` char(1) default NULL,
-  `Epinephrine` char(1) default NULL,
-  `Morfin` char(1) default NULL,
-  `Nitrogliserin` char(1) default NULL,
-  `Beta` char(1) default NULL,
-  `Bisoprolol` char(1) default NULL,
-  `Carvedilol` char(1) default NULL,
-  `ACE` char(1) default NULL,
-  `Captopril` char(1) default NULL,
-  `Ramipril` char(1) default NULL,
-  `Lisinopril` char(1) default NULL,
-  `ARB` char(1) default NULL,
-  `Kandesartan` char(1) default NULL,
-  `Irbesartan` char(1) default NULL,
-  `Losartan` char(1) default NULL,
-  `Statin` char(1) default NULL,
-  `Simvastatin` char(1) default NULL,
-  `Atorvastatin` char(1) default NULL,
-  `Rosuvastatin` char(1) default NULL
+  `aspirin` char(1) default NULL,
+  `cpg` char(1) default NULL,
+  `ticagrelor` char(1) default NULL,
+  `dobutamin` char(1) default NULL,
+  `dopamin` char(1) default NULL,
+  `ufh` char(1) default NULL,
+  `enoxaparin` char(1) default NULL,
+  `fondaparinux` char(1) default NULL,
+  `norepinefrin` char(1) default NULL,
+  `epinephrine` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
+  `bisoprol` char(1) default NULL,
+  `carvedilol` char(1) default NULL,
+  `captopril` char(1) default NULL,
+  `eamipril` char(1) default NULL,
+  `lisinopril` char(1) default NULL,
+  `morfin` char(1) default NULL,
+  `nitrogliserin` char(1) default NULL,
+  `sulfas` char(1) default NULL,
+  `bicarbonat` char(1) default NULL,
+  `magnesium` char(1) default NULL,
+  `lidocainev` char(3) default NULL,
+  `amiodaron` char(1) default NULL,
+  `kandesartan` char(1) default NULL,
+  `irbesartan` char(1) default NULL,
+  `losartan` char(1) default NULL,
+  `simvastatin` char(1) default NULL,
+  `atorvastatin` char(1) default NULL,
+  `rosurvastatin` char(1) default NULL,
+  `nama` varchar(70) default NULL,
+  `lainsatu` varchar(20) default NULL,
+  `laindua` varchar(20) default NULL,
+  `laintiga` varchar(20) default NULL,
+  `lainempat` varchar(20) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `icumendika`
+-- Dumping data for table `icumedikamentosa`
 --
 
 
-/*!40000 ALTER TABLE `icumendika` DISABLE KEYS */;
-LOCK TABLES `icumendika` WRITE;
+/*!40000 ALTER TABLE `icumedikamentosa` DISABLE KEYS */;
+LOCK TABLES `icumedikamentosa` WRITE;
+INSERT INTO `icumedikamentosa` VALUES ('0000000005','00000004','2018-06-05','','','','','','','','','','','38','','','','','','','','','','','','','','','','','','','TRENA WIJAYA','','','',''),('0000000011','00000003','2018-06-05','','','','','','','','','','','18','','','','','','','','','','','','','','','','','','','PITBULL','','','','');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `icumendika` ENABLE KEYS */;
+/*!40000 ALTER TABLE `icumedikamentosa` ENABLE KEYS */;
 
 --
--- Table structure for table `icupemfisik`
+-- Table structure for table `icumekanik`
 --
 
-DROP TABLE IF EXISTS `icupemfisik`;
-CREATE TABLE `icupemfisik` (
+DROP TABLE IF EXISTS `icumekanik`;
+CREATE TABLE `icumekanik` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `Sakitsedang` char(1) default NULL,
-  `Sakitringan` char(1) default NULL,
-  `Sakitberat` char(1) default NULL,
-  `Composmentis` char(1) default NULL,
-  `Somnolen` char(1) default NULL,
-  `Sopor` char(1) default NULL,
-  `Koma` char(1) default NULL,
-  `Delirium` char(1) default NULL,
-  `isia` varchar(20) default NULL,
-  `isib` varchar(20) default NULL,
-  `menita` char(1) default NULL,
-  `menitb` char(1) default NULL,
-  `menitc` char(1) default NULL,
-  `Febris` char(1) default NULL,
-  `Afebris` char(1) default NULL,
-  `kosong` char(1) default NULL,
-  `isikosong` varchar(37) default NULL,
-  `rrmenita` char(1) default NULL,
-  `rrmenitb` char(1) default NULL,
-  `sao` varchar(20) default NULL,
-  `JVP` char(1) default NULL,
-  `Kardiomegali` char(1) default NULL,
-  `bj` char(1) default NULL,
-  `s3` char(1) default NULL,
-  `s4` char(1) default NULL,
-  `Regurgitasi` char(1) default NULL,
-  `Aorta` char(1) default NULL,
-  `Mitual` char(1) default NULL,
-  `Triscuspid` char(1) default NULL,
-  `Pulmonal` char(1) default NULL,
-  `Stenosis` char(1) default NULL,
-  `Aortad` char(1) default NULL,
-  `Mituald` char(1) default NULL,
-  `Triscuspidd` char(1) default NULL,
-  `Pulmonald` char(1) default NULL,
-  `Rhonkhi` tinyint(1) unsigned default NULL,
-  `Hepatomegali` char(1) default NULL,
-  `Edema` char(1) default NULL
+  `ventri` char(1) default NULL,
+  `ruptur` char(1) default NULL,
+  `wall` char(1) default NULL,
+  `lain` varchar(40) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `icupemfisik`
+-- Dumping data for table `icumekanik`
 --
 
 
-/*!40000 ALTER TABLE `icupemfisik` DISABLE KEYS */;
-LOCK TABLES `icupemfisik` WRITE;
+/*!40000 ALTER TABLE `icumekanik` DISABLE KEYS */;
+LOCK TABLES `icumekanik` WRITE;
+INSERT INTO `icumekanik` VALUES ('000012','000010','','','',''),('0000000005','00000004','','','',''),('0000000011','00000003','','','','');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `icupemfisik` ENABLE KEYS */;
+/*!40000 ALTER TABLE `icumekanik` ENABLE KEYS */;
 
 --
--- Table structure for table `icustratifikasi`
+-- Table structure for table `icustraf`
 --
 
-DROP TABLE IF EXISTS `icustratifikasi`;
-CREATE TABLE `icustratifikasi` (
+DROP TABLE IF EXISTS `icustraf`;
+CREATE TABLE `icustraf` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
   `stemi` varchar(20) default NULL,
-  `nsteac` varchar(20) default NULL,
+  `teacs` varchar(20) default NULL,
   `grace` varchar(20) default NULL,
   `crussade` varchar(20) default NULL,
   `hasbled` varchar(20) default NULL,
   `chad` varchar(20) default NULL,
   `apache` varchar(20) default NULL,
-  `sofa` varchar(20) default NULL
+  `sofa` varchar(20) default NULL,
+  `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `icustratifikasi`
+-- Dumping data for table `icustraf`
 --
 
 
-/*!40000 ALTER TABLE `icustratifikasi` DISABLE KEYS */;
-LOCK TABLES `icustratifikasi` WRITE;
+/*!40000 ALTER TABLE `icustraf` DISABLE KEYS */;
+LOCK TABLES `icustraf` WRITE;
+INSERT INTO `icustraf` VALUES ('2','','0000-00-00','','','','','','','','',''),('000012','000010','2018-05-06','','','','','','','','','ANDRI'),('0000000005','00000004','2018-06-05','','','','','','','','','TRENA WIJAYA'),('0000000011','00000003','2018-06-05','','','','','','','','','PITBULL');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `icustratifikasi` ENABLE KEYS */;
+/*!40000 ALTER TABLE `icustraf` ENABLE KEYS */;
+
+--
+-- Table structure for table `icutambahan`
+--
+
+DROP TABLE IF EXISTS `icutambahan`;
+CREATE TABLE `icutambahan` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `onset` char(1) default NULL,
+  `aspirin` char(1) default NULL,
+  `arb` char(1) default NULL,
+  `vka` char(1) default NULL,
+  `anti` varchar(40) default NULL,
+  `lainnya` varchar(40) default NULL,
+  `clopid` char(1) default NULL,
+  `bb` char(1) default NULL,
+  `noac` char(1) default NULL,
+  `cagrelor` char(1) default NULL,
+  `mra` char(1) default NULL,
+  `digoxin` char(1) default NULL,
+  `ace` char(1) default NULL,
+  `ureti` char(1) default NULL,
+  `amiodaron` char(1) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `icutambahan`
+--
+
+
+/*!40000 ALTER TABLE `icutambahan` DISABLE KEYS */;
+LOCK TABLES `icutambahan` WRITE;
+INSERT INTO `icutambahan` VALUES ('000012','000010','','','','','','','','','','','','','','',''),('0000000005','00000004','A','','','','','','A','','A','','','','','',''),('0000000011','00000003','A','','','','','','A','','A','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `icutambahan` ENABLE KEYS */;
 
 --
 -- Table structure for table `icuthorax`
@@ -606,17 +2069,18 @@ CREATE TABLE `icuthorax` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `Kardiomegali` char(1) default NULL,
-  `Ictus` char(1) default NULL,
-  `CTR` char(1) default NULL,
-  `Bendungan` char(1) default NULL,
-  `aorta` char(1) default NULL,
-  `pulmonal` char(1) default NULL,
-  `jantung` char(1) default NULL,
+  `kardiomegali` char(1) default NULL,
+  `ictus` varchar(15) default NULL,
+  `ctr` varchar(5) default NULL,
+  `paru` char(1) default NULL,
+  `aorta` varchar(15) default NULL,
+  `pulmonal` varchar(15) default NULL,
+  `pinggang` varchar(15) default NULL,
   `contour` char(1) default NULL,
-  `Infiltrat` char(1) default NULL,
-  `lokasi` varchar(67) default NULL,
-  `lainya` varchar(67) default NULL
+  `infitrat` char(1) default NULL,
+  `lokasi` varchar(25) default NULL,
+  `lainnya` varchar(50) default NULL,
+  `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -626,6 +2090,7 @@ CREATE TABLE `icuthorax` (
 
 /*!40000 ALTER TABLE `icuthorax` DISABLE KEYS */;
 LOCK TABLES `icuthorax` WRITE;
+INSERT INTO `icuthorax` VALUES ('000012','000010','2018-05-06','A','B','','','','','','','','','','ANDRI'),('0000000005','00000004','2018-06-05','','','','','','','','','','','','TRENA WIJAYA'),('0000000011','00000003','2018-06-05','','','','','','','','','','','','PITBULL');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `icuthorax` ENABLE KEYS */;
 
@@ -637,29 +2102,28 @@ DROP TABLE IF EXISTS `icutindakan`;
 CREATE TABLE `icutindakan` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `PrimaryPCI` char(1) default NULL,
-  `jampcia` char(1) default NULL,
-  `jampcib` char(1) default NULL,
-  `Fibrinolitik` char(1) default NULL,
-  `Streptokinase` char(1) default NULL,
-  `Alteplase` char(1) default NULL,
-  `PCI` char(1) default NULL,
-  `jmpcia` char(1) default NULL,
-  `jmpcib` char(1) default NULL,
-  `jmpcic` char(1) default NULL,
-  `Komplikasi` char(1) default NULL,
-  `pilkomplikasi` char(1) default NULL,
-  `isikomplikasi` varchar(20) default NULL,
-  `Tapping` char(1) default NULL,
-  `IABP` char(1) default NULL,
-  `CABG` char(1) default NULL,
-  `CVP` char(1) default NULL,
-  `TPM` char(1) default NULL,
-  `Ventilator` char(1) default NULL,
-  `Hemodialisa` char(1) default NULL,
-  `Defibritasi` char(1) default NULL,
-  `Kardioversi` char(1) default NULL
+  `jamsatu` char(1) default NULL,
+  `jamdua` char(1) default NULL,
+  `strep` char(1) default NULL,
+  `altep` char(1) default NULL,
+  `jamtiga` char(1) default NULL,
+  `jamempat` char(1) default NULL,
+  `jamlima` char(1) default NULL,
+  `jamenam` char(1) default NULL,
+  `jamtujuh` char(1) default NULL,
+  `komplkasi` char(1) default NULL,
+  `isikomplikasi` varchar(40) default NULL,
+  `pciefektif` char(1) default NULL,
+  `cabg` char(1) default NULL,
+  `peri` char(1) default NULL,
+  `iabp` char(1) default NULL,
+  `cvp` char(1) default NULL,
+  `ventilator` char(1) default NULL,
+  `hemo` char(1) default NULL,
+  `defri` char(1) default NULL,
+  `kardio` char(1) default NULL,
+  `tpm` char(1) default NULL,
+  `ppm` char(1) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -669,8 +2133,41 @@ CREATE TABLE `icutindakan` (
 
 /*!40000 ALTER TABLE `icutindakan` DISABLE KEYS */;
 LOCK TABLES `icutindakan` WRITE;
+INSERT INTO `icutindakan` VALUES ('000012','000010','','','','','','','','','','','','','','','','','','','','','',''),('0000000005','00000004','','','','','','','','','','','','','','','','','','','','','',''),('0000000011','00000003','','','','','','','','','','','','','','','','','','','','','','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `icutindakan` ENABLE KEYS */;
+
+--
+-- Table structure for table `icuvital`
+--
+
+DROP TABLE IF EXISTS `icuvital`;
+CREATE TABLE `icuvital` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `umum` char(1) default NULL,
+  `sadar` char(1) default NULL,
+  `tekanan` varchar(15) default NULL,
+  `tekanand` varchar(15) default NULL,
+  `hr` char(1) default NULL,
+  `suhu` char(1) default NULL,
+  `suhulain` varchar(30) default NULL,
+  `rr` char(1) default NULL,
+  `sao` varchar(30) default NULL,
+  `tgl` date default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `icuvital`
+--
+
+
+/*!40000 ALTER TABLE `icuvital` DISABLE KEYS */;
+LOCK TABLES `icuvital` WRITE;
+INSERT INTO `icuvital` VALUES ('000012','000010','','','','','','','','','','2018-05-06','ANDRI'),('0000000005','00000004','A','','','','','','','','','2018-06-05','TRENA WIJAYA'),('0000000011','00000003','A','','','','','','','','','2018-06-05','PITBULL');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `icuvital` ENABLE KEYS */;
 
 --
 -- Table structure for table `keamanan`
@@ -744,7 +2241,7 @@ CREATE TABLE `pasien` (
 
 /*!40000 ALTER TABLE `pasien` DISABLE KEYS */;
 LOCK TABLES `pasien` WRITE;
-INSERT INTO `pasien` VALUES ('000001','312122110878001','YOPI BUDIANTO','1985-11-05',32,'L','Jl Raya Dipati Ukur No 11 Bandung\r\n','0225471122','081224744025','S1','Kurang Dari 30 Juta','A'),('000002','1213322211','Rani Lestriani','1965-11-10',52,'P','Jl. Bengawan Solo No14 Bandung\r\n','','991977761','SMP	','30 Juta - 50 Juta','A'),('000003','7166551441','HERIANA','1990-11-11',27,'L','ANTAPANI \r\n','022-11772771','0762544431','SMP	','Kurang Dari 30 Juta','A'),('000004','123122','ABDUL','2000-12-12',17,'L','Bandung\r\n','18881','8181','SD','Kurang Dari 30 Juta','A'),('000005','23122','ARY PURNAMA','2000-05-05',17,'L','BANDUNG','','','Tidak Sekolah','Kurang Dari 30 Juta','A'),('000006','827655521','Tatang Supriatna','1975-11-11',42,'L','Bandung\r\n','9177661','08155542','SMA','Kurang Dari 30 Juta','A'),('000007','765444322212222','Tukul Arwana','2007-03-14',11,'L','','','','Tidak Sekolah','Kurang Dari 30 Juta','A'),('000008','726535522','Dadang Komariah','1994-03-15',24,'L','Bandung','','','','50 Juta - 100 Juta','A');
+INSERT INTO `pasien` VALUES ('00000001','192771212','YUAN','1987-11-11',31,'L','BANDUNG','','','S1','Kurang Dari 30 Juta','A'),('00000002','2625142','YOPI','1978-11-11',40,'L','BANDUNG\r\n','17125511','8272','SD','Kurang Dari 30 Juta','A'),('00000003','53212121','PITBULL','2000-11-12',18,'L','SUBANG\r\n','725133221','78275212','Tidak Sekolah','Kurang Dari 30 Juta','A'),('00000004','51433122','TRENA WIJAYA','1980-05-14',38,'L','CIMAHI\r\n','199281','2882','S1','Kurang Dari 30 Juta','A'),('00000005','71762551','BANG JACK','2000-11-11',18,'L','BANDUNG\r\n','','','Tidak Sekolah','Kurang Dari 30 Juta','A'),('00000006','12334','INSANI AMELIA','2000-11-12',18,'P','SUKABUMI\r\n','','','','Kurang Dari 30 Juta','A'),('00000007','2332','ILYAS','2008-12-19',10,'L','','','','','50 Juta - 100 Juta','A'),('00000008','','AZAM','1980-11-12',38,'L','JAKARTA','','','','Kurang Dari 30 Juta','A'),('00000009','','UDIN','2000-06-13',18,'L','','','','','Kurang Dari 30 Juta','A'),('00000010','','DESI RATNA SARI','1990-07-11',28,'P','','','','','Kurang Dari 30 Juta','A'),('00000011','','AULIA','1978-12-20',40,'P','','','','','Kurang Dari 30 Juta','A');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `pasien` ENABLE KEYS */;
 
@@ -813,7 +2310,7 @@ CREATE TABLE `rawatinap` (
 
 /*!40000 ALTER TABLE `rawatinap` DISABLE KEYS */;
 LOCK TABLES `rawatinap` WRITE;
-INSERT INTO `rawatinap` VALUES ('000001','000001','2017-10-12','',0,'YOPI BUDIANTO'),('000002','000002','2017-10-15','',0,'Rani Lestriani'),('000003','000003','2017-10-22','',0,'HERIANA'),('000007','000007','2018-03-14',NULL,NULL,'Tukul Arwana');
+INSERT INTO `rawatinap` VALUES ('000001','000001','2017-10-12','',0,'YOPI BUDIANTO'),('000002','000002','2017-10-15','',0,'Rani Lestriani'),('000003','000003','2017-10-22','',0,'HERIANA'),('000008','000008','2018-05-03','',0,'INSANI KAMELIA'),('000009','000006','2018-05-04','S',0,'TATANG SUPRIATNA'),('0000000016','00000001','2018-05-10','',31,'YUAN'),('0000000002','00000002','2018-06-04','S',40,'YOPI'),('0000000008','00000005','2018-06-05','',18,'BANG JACK'),('0000000019','00000011','2018-06-05','',40,'AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinap` ENABLE KEYS */;
 
@@ -838,7 +2335,7 @@ CREATE TABLE `rawatinapdiagnosa` (
 
 /*!40000 ALTER TABLE `rawatinapdiagnosa` DISABLE KEYS */;
 LOCK TABLES `rawatinapdiagnosa` WRITE;
-INSERT INTO `rawatinapdiagnosa` VALUES ('000001','000001','','','YOPI BUDIANTO','2017-10-12'),('000002','000002','','','Rani Lestriani','2017-10-15'),('000003','000003','','','HERIANA','2017-10-22'),('000007','000007',NULL,NULL,'Tukul Arwana','2018-03-14');
+INSERT INTO `rawatinapdiagnosa` VALUES ('000001','000001','','','YOPI BUDIANTO','2017-10-12'),('000002','000002','','','Rani Lestriani','2017-10-15'),('000003','000003','','','HERIANA','2017-10-22'),('000008','000008','','','INSANI KAMELIA','2018-05-03'),('000009','000006','A00.9','Cholera, unspecified','TATANG SUPRIATNA','2018-05-04'),('0000000016','00000001','','','YUAN','2018-05-10'),('0000000002','00000002','','','YOPI','2018-06-04'),('0000000008','00000005','','','BANG JACK','2018-06-05'),('0000000019','00000011','','','AULIA','2018-06-05');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapdiagnosa` ENABLE KEYS */;
 
@@ -868,7 +2365,7 @@ CREATE TABLE `rawatinapdischarge` (
 
 /*!40000 ALTER TABLE `rawatinapdischarge` DISABLE KEYS */;
 LOCK TABLES `rawatinapdischarge` WRITE;
-INSERT INTO `rawatinapdischarge` VALUES ('000001','000001','2017-10-12','1899-12-30','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','0000-00-00','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','0000-00-00','','','','','','','HERIANA'),('000007','000007','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Tukul Arwana');
+INSERT INTO `rawatinapdischarge` VALUES ('000001','000001','2017-10-12','1899-12-30','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','0000-00-00','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','0000-00-00','','','','','','','HERIANA'),('000008','000008','2018-05-03','0000-00-00','','','','','','','INSANI KAMELIA'),('000009','000006','2018-05-04','1899-12-30','','','','','','','TATANG SUPRIATNA'),('0000000016','00000001','2018-05-10','0000-00-00','','','','','','','YUAN'),('0000000002','00000002','2018-06-04','1899-12-30','','','','','','','YOPI'),('0000000008','00000005','2018-06-05','1899-12-30','','','','','','','BANG JACK'),('0000000019','00000011','2018-06-05','1899-12-30','','','','','','','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapdischarge` ENABLE KEYS */;
 
@@ -888,25 +2385,32 @@ CREATE TABLE `rawatinapekg` (
   `avnrt` char(1) default NULL,
   `avrt` char(1) default NULL,
   `vt` char(1) default NULL,
-  `axis` char(1) default NULL,
-  `rate` varchar(10) default NULL,
-  `qtd` varchar(10) default NULL,
-  `depresi` varchar(10) default NULL,
   `avblock` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
   `lad` char(1) default NULL,
-  `rad` char(1) default NULL,
-  `superior` char(1) default NULL,
-  `wave` varchar(10) default NULL,
-  `pwd` varchar(10) default NULL,
-  `printerval` varchar(10) default NULL,
-  `qtinterval` varchar(10) default NULL,
+  `rad` varchar(10) default NULL,
+  `superoir` varchar(10) default NULL,
   `durasi` varchar(10) default NULL,
   `qpat` varchar(10) default NULL,
-  `elevasi` varchar(10) default NULL,
-  `inversi` varchar(10) default NULL,
-  `lvh` varchar(10) default NULL,
-  `lainnya` varchar(30) default NULL,
-  `nama` varchar(70) default NULL
+  `rbb` varchar(10) default NULL,
+  `lbb` varchar(10) default NULL,
+  `vcd` varchar(10) default NULL,
+  `rate` varchar(10) default NULL,
+  `elektrik` char(2) default NULL,
+  `depresi` char(2) default NULL,
+  `elevasi` char(2) default NULL,
+  `pwa` char(1) default NULL,
+  `isipwa` varchar(10) default NULL,
+  `pwd` char(1) default NULL,
+  `isipwd` varchar(10) default NULL,
+  `normal` char(1) default NULL,
+  `inversi` char(1) default NULL,
+  `ttall` char(1) default NULL,
+  `isiprinterval` varchar(10) default NULL,
+  `isiqt` varchar(10) default NULL,
+  `isirr` varchar(10) default NULL,
+  `isical` varchar(10) default NULL,
+  `nama` varchar(78) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -916,7 +2420,7 @@ CREATE TABLE `rawatinapekg` (
 
 /*!40000 ALTER TABLE `rawatinapekg` DISABLE KEYS */;
 LOCK TABLES `rawatinapekg` WRITE;
-INSERT INTO `rawatinapekg` VALUES ('000001','000001','2017-10-12','A','','','','','','','A','','','','','A','','','','','','','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','','','','','','','','','','','','','','','','','','','','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','','','','','','','','','','','','','','','','','','','','','','','','','','HERIANA'),('000007','000007','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Tukul Arwana');
+INSERT INTO `rawatinapekg` VALUES ('000001','000001','2017-10-12','A','','','','','','','','A','','','','','','','','','YOPI BUDIA','','','','','','','','','','','','','','',''),('000002','000002','2017-10-15','','','','','','','','','','','','','','','','','','Rani Lestr','','','','','','','','','','','','','','',''),('000003','000003','2017-10-22','','','','','','','','','','','','','','','','','','HERIANA','','','','','','','','','','','','','','',''),('000008','000008','2018-05-03','','','','','','','','','','','','','','','','','','INSANI KAM','','','','','','','','','','','','','','',''),('000009','000006','2018-05-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','TATANG SUPRIATNA'),('0000000016','00000001','2018-05-10','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YUAN'),('0000000002','00000002','2018-06-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI'),('0000000008','00000005','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','BANG JACK'),('0000000019','00000011','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapekg` ENABLE KEYS */;
 
@@ -947,7 +2451,7 @@ CREATE TABLE `rawatinapfaktor` (
 
 /*!40000 ALTER TABLE `rawatinapfaktor` DISABLE KEYS */;
 LOCK TABLES `rawatinapfaktor` WRITE;
-INSERT INTO `rawatinapfaktor` VALUES ('000001','000001','Y','Y','','','Y','','','','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','2017-10-22','HERIANA'),('000007','000007',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Tukul Arwana');
+INSERT INTO `rawatinapfaktor` VALUES ('000001','000001','Y','Y','','','Y','','','','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','2017-10-22','HERIANA'),('000008','000008','','','','','','','','','2018-05-03','INSANI KAMELIA'),('000009','000006','Y','','','','','Y','','','2018-05-04','TATANG SUPRIATNA'),('0000000016','00000001','','','','','','','','','2018-05-10','YUAN'),('0000000002','00000002','','Y','Y','','','','','','2018-06-04','YOPI'),('0000000008','00000005','','Y','Y','','','','','','2018-06-05','BANG JACK'),('0000000019','00000011','','','','','','','','','2018-06-05','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapfaktor` ENABLE KEYS */;
 
@@ -980,7 +2484,7 @@ CREATE TABLE `rawatinapfisik` (
 
 /*!40000 ALTER TABLE `rawatinapfisik` DISABLE KEYS */;
 LOCK TABLES `rawatinapfisik` WRITE;
-INSERT INTO `rawatinapfisik` VALUES ('000001','000001','','','','','','','','','','','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','','','2017-10-22','HERIANA'),('000007','000007',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Tukul Arwana');
+INSERT INTO `rawatinapfisik` VALUES ('000001','000001','','','','','','','','','','','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','','','2017-10-22','HERIANA'),('000008','000008','','','','','','','','','','','2018-05-03','INSANI KAMELIA'),('000009','000006','B','A','A','B','','','','','','','2018-05-04','TATANG SUPRIATNA'),('0000000016','00000001','','','','','','','','','','','2018-05-10','YUAN'),('0000000002','00000002','','','','','','','','','','','2018-06-04','YOPI'),('0000000008','00000005','','','','','','','','','','','2018-06-05','BANG JACK'),('0000000019','00000011','','','','','','','','','','','2018-06-05','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapfisik` ENABLE KEYS */;
 
@@ -1013,7 +2517,7 @@ CREATE TABLE `rawatinapkeluhan` (
 
 /*!40000 ALTER TABLE `rawatinapkeluhan` DISABLE KEYS */;
 LOCK TABLES `rawatinapkeluhan` WRITE;
-INSERT INTO `rawatinapkeluhan` VALUES ('000001','000001','Y','Y','Y','Y','','','','','','000001','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','','','2017-10-22','HERIANA'),('000007','000007',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Tukul Arwana');
+INSERT INTO `rawatinapkeluhan` VALUES ('000001','000001','Y','Y','Y','Y','','','','','','000001','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','','','2017-10-22','HERIANA'),('000008','000008','','','','','','','','','','','2018-05-03','INSANI KAMELIA'),('000009','000006','Y','','','','','','Y','','','','2018-05-04','TATANG SUPRIATNA'),('0000000016','00000001','','','','','','','','','','','2018-05-10','YUAN'),('0000000002','00000002','Y','Y','Y','Y','Y','Y','Y','','','','2018-06-04','YOPI'),('0000000008','00000005','','','','','','Y','','','','','2018-06-05','BANG JACK'),('0000000019','00000011','Y','Y','Y','','Y','Y','Y','Y','','','2018-06-05','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapkeluhan` ENABLE KEYS */;
 
@@ -1062,7 +2566,8 @@ CREATE TABLE `rawatinaplab` (
   `fibrinogen` varchar(30) default NULL,
   `dimer` varchar(30) default NULL,
   `lainya` varchar(30) default NULL,
-  `nama` varchar(70) default NULL
+  `nama` varchar(70) default NULL,
+  `tropd` varchar(30) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1072,7 +2577,7 @@ CREATE TABLE `rawatinaplab` (
 
 /*!40000 ALTER TABLE `rawatinaplab` DISABLE KEYS */;
 LOCK TABLES `rawatinaplab` WRITE;
-INSERT INTO `rawatinaplab` VALUES ('000001','000001','2017-10-12','1','2','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','HERIANA'),('000007','000007','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Tukul Arwana');
+INSERT INTO `rawatinaplab` VALUES ('000001','000001','2017-10-12','1','2','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI BUDIANTO',''),('000002','000002','2017-10-15','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Rani Lestriani',''),('000003','000003','2017-10-22','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','HERIANA',''),('000008','000008','2018-05-03','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI KAMELIA',''),('000009','000006','2018-05-04','12','1','','','','','','','','','','','','','','','','','','','','','1','','','','','','','','','','','','','','TATANG SUPRIATNA','2'),('0000000016','00000001','2018-05-10','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YUAN',''),('0000000002','00000002','2018-06-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI',''),('0000000008','00000005','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','BANG JACK',''),('0000000019','00000011','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','AULIA','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinaplab` ENABLE KEYS */;
 
@@ -1085,44 +2590,40 @@ CREATE TABLE `rawatinapmedikamentosa` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `antiplatelet` char(1) default NULL,
   `aspirin` char(1) default NULL,
   `cpg` char(1) default NULL,
   `ticagrelor` char(1) default NULL,
-  `inotropik` char(1) default NULL,
   `dobutamin` char(1) default NULL,
   `dopamin` char(1) default NULL,
+  `ufh` char(1) default NULL,
+  `enoxaparin` char(1) default NULL,
+  `fondaparinux` char(1) default NULL,
+  `norepinefrin` char(1) default NULL,
+  `epinephrine` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
+  `bisoprol` char(1) default NULL,
+  `carvedilol` char(1) default NULL,
+  `captopril` char(1) default NULL,
+  `eamipril` char(1) default NULL,
+  `lisinopril` char(1) default NULL,
+  `morfin` char(1) default NULL,
+  `nitrogliserin` char(1) default NULL,
   `sulfas` char(1) default NULL,
   `bicarbonat` char(1) default NULL,
   `magnesium` char(1) default NULL,
   `lidocainev` char(3) default NULL,
   `amiodaron` char(1) default NULL,
-  `antikoagulan` char(1) default NULL,
-  `ufh` char(1) default NULL,
-  `enoxaparin` char(1) default NULL,
-  `fondaparinux` char(1) default NULL,
-  `vasopresin` char(1) default NULL,
-  `norepinefrin` char(1) default NULL,
-  `epinephrine` char(1) default NULL,
-  `morfin` char(1) default NULL,
-  `nitrogliserin` char(1) default NULL,
-  `betablocker` char(1) default NULL,
-  `bisoprol` char(1) default NULL,
-  `carvedilol` char(1) default NULL,
-  `acei` char(1) default NULL,
-  `captopril` char(1) default NULL,
-  `eamipril` char(1) default NULL,
-  `lisinopril` char(1) default NULL,
-  `arb` char(1) default NULL,
   `kandesartan` char(1) default NULL,
   `irbesartan` char(1) default NULL,
   `losartan` char(1) default NULL,
-  `statin` char(1) default NULL,
   `simvastatin` char(1) default NULL,
   `atorvastatin` char(1) default NULL,
   `rosurvastatin` char(1) default NULL,
-  `lainnya` varchar(30) default NULL,
-  `nama` varchar(70) default NULL
+  `nama` varchar(70) default NULL,
+  `lainsatu` varchar(20) default NULL,
+  `laindua` varchar(20) default NULL,
+  `laintiga` varchar(20) default NULL,
+  `lainempat` varchar(20) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1132,7 +2633,7 @@ CREATE TABLE `rawatinapmedikamentosa` (
 
 /*!40000 ALTER TABLE `rawatinapmedikamentosa` DISABLE KEYS */;
 LOCK TABLES `rawatinapmedikamentosa` WRITE;
-INSERT INTO `rawatinapmedikamentosa` VALUES ('000001','000001','2017-10-12','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','HERIANA'),('000007','000007','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Tukul Arwana');
+INSERT INTO `rawatinapmedikamentosa` VALUES ('000001','000001','2017-10-12','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI BUDIANTO','','','',''),('000002','000002','2017-10-15','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Rani Lestriani','','','',''),('000003','000003','2017-10-22','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','HERIANA','','','',''),('000008','000008','2018-05-03','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI KAMELIA','','','',''),('000009','000006','2018-05-04','','','','','','','','','','','42','','','','','','','','','','','','','','','','','','','TATANG SUPRIATNA','','','',''),('0000000016','00000001','2018-05-10','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YUAN','','','',''),('0000000002','00000002','2018-06-04','','','','','','','','','','','40','','','','','','','','','','','','','','','','','','','YOPI','','','',''),('0000000008','00000005','2018-06-05','','','','','','','','','','','18','','','','','','','','','','','','','','','','','','','BANG JACK','','','',''),('0000000019','00000011','2018-06-05','','','','','','','','','','','40','','','','','','','','','','','','','','','','','','','AULIA','','','','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapmedikamentosa` ENABLE KEYS */;
 
@@ -1164,7 +2665,7 @@ CREATE TABLE `rawatinapstraf` (
 
 /*!40000 ALTER TABLE `rawatinapstraf` DISABLE KEYS */;
 LOCK TABLES `rawatinapstraf` WRITE;
-INSERT INTO `rawatinapstraf` VALUES ('000001','000001','2017-10-12','','','','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','','','','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','','','','','','','','','','HERIANA'),('000007','000007','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Tukul Arwana');
+INSERT INTO `rawatinapstraf` VALUES ('000001','000001','2017-10-12','','','','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','','','','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','','','','','','','','','','HERIANA'),('000008','000008','2018-05-03','','','','','','','','','','INSANI KAMELIA'),('000009','000006','2018-05-04','','','','','','','','','','TATANG SUPRIATNA'),('0000000016','00000001','2018-05-10','','','','','','','','','','YUAN'),('0000000002','00000002','2018-06-04','','','','','','','','','','YOPI'),('0000000008','00000005','2018-06-05','','','','','','','','','','BANG JACK'),('0000000019','00000011','2018-06-05','','','','','','','','','','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapstraf` ENABLE KEYS */;
 
@@ -1198,7 +2699,7 @@ CREATE TABLE `rawatinapthorax` (
 
 /*!40000 ALTER TABLE `rawatinapthorax` DISABLE KEYS */;
 LOCK TABLES `rawatinapthorax` WRITE;
-INSERT INTO `rawatinapthorax` VALUES ('000001','000001','2017-10-12','A','B','','','','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','','','','','','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','','','','','','','','','','','','HERIANA'),('000007','000007','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Tukul Arwana');
+INSERT INTO `rawatinapthorax` VALUES ('000001','000001','2017-10-12','A','B','','','','','','','','','','YOPI BUDIANTO'),('000002','000002','2017-10-15','','','','','','','','','','','','Rani Lestriani'),('000003','000003','2017-10-22','','','','','','','','','','','','HERIANA'),('000008','000008','2018-05-03','','','','','','','','','','','','INSANI KAMELIA'),('000009','000006','2018-05-04','','','','','','','','','','','','TATANG SUPRIATNA'),('0000000016','00000001','2018-05-10','','','','','','','','','','','','YUAN'),('0000000002','00000002','2018-06-04','','','','','','','','','','','','YOPI'),('0000000008','00000005','2018-06-05','','','','','','','','','','','','BANG JACK'),('0000000019','00000011','2018-06-05','','','','','','','','','','','','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapthorax` ENABLE KEYS */;
 
@@ -1230,7 +2731,7 @@ CREATE TABLE `rawatinapvital` (
 
 /*!40000 ALTER TABLE `rawatinapvital` DISABLE KEYS */;
 LOCK TABLES `rawatinapvital` WRITE;
-INSERT INTO `rawatinapvital` VALUES ('000001','000001','A','B','140','20','B','B','','A','12','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','','2017-10-22','HERIANA'),('000007','000007',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Tukul Arwana');
+INSERT INTO `rawatinapvital` VALUES ('000001','000001','A','B','140','20','B','B','','A','12','2017-10-12','YOPI BUDIANTO'),('000002','000002','','','','','','','','','','2017-10-15','Rani Lestriani'),('000003','000003','','','','','','','','','','2017-10-22','HERIANA'),('000008','000008','','','','','','','','','','2018-05-03','INSANI KAMELIA'),('000009','000006','A','B','','','','','','','','2018-05-04','TATANG SUPRIATNA'),('0000000016','00000001','','','','','','','','','','2018-05-10','YUAN'),('0000000002','00000002','','','','','','','','','','2018-06-04','YOPI'),('0000000008','00000005','','','','','','','','','','2018-06-05','BANG JACK'),('0000000019','00000011','','','','','','','','','','2018-06-05','AULIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatinapvital` ENABLE KEYS */;
 
@@ -1255,7 +2756,7 @@ CREATE TABLE `rawatjalan` (
 
 /*!40000 ALTER TABLE `rawatjalan` DISABLE KEYS */;
 LOCK TABLES `rawatjalan` WRITE;
-INSERT INTO `rawatjalan` VALUES ('000004','000005','2017-10-23','',0,'ARY PURNAMA'),('000008','000008','2018-03-14',NULL,NULL,'Dadang Komariah');
+INSERT INTO `rawatjalan` VALUES ('000004','000005','2017-10-23','',0,'ARY PURNAMA'),('000007','000007','2018-05-03','',0,'YOGI PRATAMA'),('000010','000008','2018-05-04','',0,'INSANI KAMELIA'),('0000000003','00000002','2018-06-04','',40,'YOPI'),('0000000009','00000007','2018-06-05','',10,'ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalan` ENABLE KEYS */;
 
@@ -1280,7 +2781,7 @@ CREATE TABLE `rawatjalandiagnosa` (
 
 /*!40000 ALTER TABLE `rawatjalandiagnosa` DISABLE KEYS */;
 LOCK TABLES `rawatjalandiagnosa` WRITE;
-INSERT INTO `rawatjalandiagnosa` VALUES ('000004','000005','A01.0','Typhoid fever','ARY PURNAMA','2017-10-23'),('000008','000008',NULL,NULL,'Dadang Komariah','2018-03-14');
+INSERT INTO `rawatjalandiagnosa` VALUES ('000004','000005','A01.0','Typhoid fever','ARY PURNAMA','2017-10-23'),('000007','000007','','','YOGI PRATAMA','2018-05-03'),('000010','000008','A03.0','Shigellosis due to Shigella dysenteriae','INSANI KAMELIA','2018-05-04'),('0000000003','00000002','','','YOPI','2018-06-04'),('0000000009','00000007','','','ILYAS','2018-06-05');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalandiagnosa` ENABLE KEYS */;
 
@@ -1310,7 +2811,7 @@ CREATE TABLE `rawatjalandischarge` (
 
 /*!40000 ALTER TABLE `rawatjalandischarge` DISABLE KEYS */;
 LOCK TABLES `rawatjalandischarge` WRITE;
-INSERT INTO `rawatjalandischarge` VALUES ('000004','000005','2017-10-23','2018-01-16','Perbaikan','A','','','','','ARY PURNAMA'),('000008','000008','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Dadang Komariah');
+INSERT INTO `rawatjalandischarge` VALUES ('000004','000005','2017-10-23','2018-01-16','Perbaikan','A','','','','','ARY PURNAMA'),('000007','000007','2018-05-03','0000-00-00','','','','','','','YOGI PRATAMA'),('000010','000008','2018-05-04','1899-12-30','','','','','','','INSANI KAMELIA'),('0000000003','00000002','2018-06-04','1899-12-30','','','','','','','YOPI'),('0000000009','00000007','2018-06-05','1899-12-30','','','','','','','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalandischarge` ENABLE KEYS */;
 
@@ -1330,25 +2831,32 @@ CREATE TABLE `rawatjalanekg` (
   `avnrt` char(1) default NULL,
   `avrt` char(1) default NULL,
   `vt` char(1) default NULL,
-  `axis` char(1) default NULL,
-  `rate` varchar(10) default NULL,
-  `qtd` varchar(10) default NULL,
-  `depresi` varchar(10) default NULL,
   `avblock` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
   `lad` char(1) default NULL,
-  `rad` char(1) default NULL,
-  `superior` char(1) default NULL,
-  `wave` varchar(10) default NULL,
-  `pwd` varchar(10) default NULL,
-  `printerval` varchar(10) default NULL,
-  `qtinterval` varchar(10) default NULL,
+  `rad` varchar(10) default NULL,
+  `superoir` varchar(10) default NULL,
   `durasi` varchar(10) default NULL,
   `qpat` varchar(10) default NULL,
-  `elevasi` varchar(10) default NULL,
-  `inversi` varchar(10) default NULL,
-  `lvh` varchar(10) default NULL,
-  `lainnya` varchar(30) default NULL,
-  `nama` varchar(70) default NULL
+  `rbb` varchar(10) default NULL,
+  `lbb` varchar(10) default NULL,
+  `vcd` varchar(10) default NULL,
+  `rate` varchar(10) default NULL,
+  `elektrik` char(2) default NULL,
+  `depresi` char(2) default NULL,
+  `elevasi` char(2) default NULL,
+  `pwa` char(1) default NULL,
+  `isipwa` varchar(10) default NULL,
+  `pwd` char(1) default NULL,
+  `isipwd` varchar(10) default NULL,
+  `normal` char(1) default NULL,
+  `inversi` char(1) default NULL,
+  `ttall` char(1) default NULL,
+  `isiprinterval` varchar(10) default NULL,
+  `isiqt` varchar(10) default NULL,
+  `isirr` varchar(10) default NULL,
+  `isical` varchar(10) default NULL,
+  `nama` varchar(78) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1358,7 +2866,7 @@ CREATE TABLE `rawatjalanekg` (
 
 /*!40000 ALTER TABLE `rawatjalanekg` DISABLE KEYS */;
 LOCK TABLES `rawatjalanekg` WRITE;
-INSERT INTO `rawatjalanekg` VALUES ('000004','000005','2017-10-23','','','','','','','','','','','','','','','','','','','','','','','','','','ARY PURNAMA'),('000008','000008','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Dadang Komariah');
+INSERT INTO `rawatjalanekg` VALUES ('000010','000008','2018-05-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI KAMELIA'),('0000000003','00000002','2018-06-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI'),('0000000009','00000007','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalanekg` ENABLE KEYS */;
 
@@ -1389,7 +2897,7 @@ CREATE TABLE `rawatjalanfaktor` (
 
 /*!40000 ALTER TABLE `rawatjalanfaktor` DISABLE KEYS */;
 LOCK TABLES `rawatjalanfaktor` WRITE;
-INSERT INTO `rawatjalanfaktor` VALUES ('000004','000005','Y','Y','','','','','','','2017-10-23','ARY PURNAMA'),('000008','000008',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Dadang Komariah');
+INSERT INTO `rawatjalanfaktor` VALUES ('000004','000005','Y','Y','','','','','','','2017-10-23','ARY PURNAMA'),('000007','000007','','','','','','','','','2018-05-03','YOGI PRATAMA'),('000010','000008','Y','','Y','Y','','Y','','','2018-05-04','INSANI KAMELIA'),('0000000003','00000002','','','','','','','','','2018-06-04','YOPI'),('0000000009','00000007','','','','','','','','','2018-06-05','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalanfaktor` ENABLE KEYS */;
 
@@ -1422,7 +2930,7 @@ CREATE TABLE `rawatjalanfisik` (
 
 /*!40000 ALTER TABLE `rawatjalanfisik` DISABLE KEYS */;
 LOCK TABLES `rawatjalanfisik` WRITE;
-INSERT INTO `rawatjalanfisik` VALUES ('000004','000005','','','','','','','','','','','2017-10-23','ARY PURNAMA'),('000008','000008',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Dadang Komariah');
+INSERT INTO `rawatjalanfisik` VALUES ('000004','000005','','','','','','','','','','','2017-10-23','ARY PURNAMA'),('000007','000007','','','','','','','','','','','2018-05-03','YOGI PRATAMA'),('000010','000008','','','','','','','','','','','2018-05-04','INSANI KAMELIA'),('0000000003','00000002','','','','','','','','','','','2018-06-04','YOPI'),('0000000009','00000007','','','','','','','','','','','2018-06-05','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalanfisik` ENABLE KEYS */;
 
@@ -1456,7 +2964,7 @@ CREATE TABLE `rawatjalankeluhan` (
 
 /*!40000 ALTER TABLE `rawatjalankeluhan` DISABLE KEYS */;
 LOCK TABLES `rawatjalankeluhan` WRITE;
-INSERT INTO `rawatjalankeluhan` VALUES ('000004','000005','Y','','Y','','','','','','','HHHH','Y','2017-10-23','ARY PURNAMA'),('000008','000008',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Dadang Komariah');
+INSERT INTO `rawatjalankeluhan` VALUES ('000004','000005','Y','','Y','','','','','','','HHHH','Y','2017-10-23','ARY PURNAMA'),('000007','000007','','','','','','','','','','','','2018-05-03','YOGI PRATAMA'),('000010','000008','Y','Y','','','','','','','Y','','','2018-05-04','INSANI KAMELIA'),('0000000003','00000002','Y','Y','','','','','Y','','','','','2018-06-04','YOPI'),('0000000009','00000007','','Y','Y','Y','','Y','Y','','','','','2018-06-05','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalankeluhan` ENABLE KEYS */;
 
@@ -1505,7 +3013,8 @@ CREATE TABLE `rawatjalanlab` (
   `fibrinogen` varchar(30) default NULL,
   `dimer` varchar(30) default NULL,
   `lainya` varchar(30) default NULL,
-  `nama` varchar(70) default NULL
+  `nama` varchar(70) default NULL,
+  `tropd` varchar(20) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1515,7 +3024,7 @@ CREATE TABLE `rawatjalanlab` (
 
 /*!40000 ALTER TABLE `rawatjalanlab` DISABLE KEYS */;
 LOCK TABLES `rawatjalanlab` WRITE;
-INSERT INTO `rawatjalanlab` VALUES ('000004','000005','2017-10-23','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ARY PURNAMA'),('000008','000008','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Dadang Komariah');
+INSERT INTO `rawatjalanlab` VALUES ('000004','000005','2017-10-23','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ARY PURNAMA',''),('000007','000007','2018-05-03','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOGI PRATAMA',''),('000010','000008','2018-05-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI KAMELIA',''),('0000000003','00000002','2018-06-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI',''),('0000000009','00000007','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ILYAS','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalanlab` ENABLE KEYS */;
 
@@ -1547,7 +3056,7 @@ CREATE TABLE `rawatjalanstraf` (
 
 /*!40000 ALTER TABLE `rawatjalanstraf` DISABLE KEYS */;
 LOCK TABLES `rawatjalanstraf` WRITE;
-INSERT INTO `rawatjalanstraf` VALUES ('000004','000005','2017-10-23','','','','','','','','','','ARY PURNAMA'),('000008','000008','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Dadang Komariah');
+INSERT INTO `rawatjalanstraf` VALUES ('000004','000005','2017-10-23','','','','','','','','','','ARY PURNAMA'),('000007','000007','2018-05-03','','','','','','','','','','YOGI PRATAMA'),('000010','000008','2018-05-04','','','','','','','','','','INSANI KAMELIA'),('0000000003','00000002','2018-06-04','','','','','','','','','','YOPI'),('0000000009','00000007','2018-06-05','','','','','','','','','','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalanstraf` ENABLE KEYS */;
 
@@ -1581,7 +3090,7 @@ CREATE TABLE `rawatjalanthorax` (
 
 /*!40000 ALTER TABLE `rawatjalanthorax` DISABLE KEYS */;
 LOCK TABLES `rawatjalanthorax` WRITE;
-INSERT INTO `rawatjalanthorax` VALUES ('000004','000005','2017-10-23','','','','','','','','','','','','ARY PURNAMA'),('000008','000008','2018-03-14',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Dadang Komariah');
+INSERT INTO `rawatjalanthorax` VALUES ('000004','000005','2017-10-23','','','','','','','','','','','','ARY PURNAMA'),('000007','000007','2018-05-03','','','','','','','','','','','','YOGI PRATAMA'),('000010','000008','2018-05-04','','','','','','','','','','','','INSANI KAMELIA'),('0000000003','00000002','2018-06-04','','','','','','','','','','','','YOPI'),('0000000009','00000007','2018-06-05','','','','','','','','','','','','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalanthorax` ENABLE KEYS */;
 
@@ -1613,7 +3122,7 @@ CREATE TABLE `rawatjalanvital` (
 
 /*!40000 ALTER TABLE `rawatjalanvital` DISABLE KEYS */;
 LOCK TABLES `rawatjalanvital` WRITE;
-INSERT INTO `rawatjalanvital` VALUES ('000004','000005','A','','','','','','','','','2017-10-23','ARY PURNAMA'),('000008','000008',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'2018-03-14','Dadang Komariah');
+INSERT INTO `rawatjalanvital` VALUES ('000004','000005','A','','','','','','','','','2017-10-23','ARY PURNAMA'),('000007','000007','','','','','','','','','','2018-05-03','YOGI PRATAMA'),('000010','000008','A','B','','','A','','','','','2018-05-04','INSANI KAMELIA'),('0000000003','00000002','','','','','','','','','','2018-06-04','YOPI'),('0000000009','00000007','A','B','','','','','','','','2018-06-05','ILYAS');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rawatjalanvital` ENABLE KEYS */;
 
@@ -1647,7 +3156,7 @@ CREATE TABLE `register` (
 
 /*!40000 ALTER TABLE `register` DISABLE KEYS */;
 LOCK TABLES `register` WRITE;
-INSERT INTO `register` VALUES (1,'000001','000001','YOPI BUDIANTO','2017-10-23',1,'Rawat Inap','CICU','','RAWAT INAP',32,'Jl Raya Dipati Ukur No 11 Bandung\r\n','0225471122','P'),(2,'000002','000002','Rani Lestriani','2017-10-23',0,'Rawat Jalan','','','RAWAT INAP',52,'Jl. Bengawan Solo No14 Bandung\r\n','','N'),(3,'000003','000003','HERIANA','2017-10-23',0,'Rawat Inap','','Aglonema','RAWAT INAP',27,'ANTAPANI \r\n','022-11772771','N'),(5,'000004','000005','ARY PURNAMA','2017-10-23',0,'Rawat Jalan','','','RAWAT JALAN',17,'BANDUNG','','P'),(8,'000005','000006','Tatang Supriatna','2017-12-10',0,'','','','EMERGENSI',42,'Bandung\r\n','9177661','N'),(9,'000006','000005','ARY PURNAMA','2018-01-16',0,'Rawat Jalan','','','EMERGENSI',17,'BANDUNG','','P'),(10,'000007','000007','Tukul Arwana','2018-03-14',0,'Rawat Jalan','','','RAWAT INAP',11,'','','N'),(11,'000008','000008','Dadang Komariah','2018-03-14',0,'Rawat Jalan','','','RAWAT JALAN',24,'Bandung','','N');
+INSERT INTO `register` VALUES (41,'0000000001','00000005','BANG JACK','2018-06-04',0,'','','','BEDAH JANTUNG',18,'BANDUNG\r\n','','P'),(42,'0000000002','00000002','YOPI','2018-06-04',1,'Rawat Inap','CICU','','RAWAT INAP',40,'BANDUNG\r\n','17125511','P'),(43,'0000000003','00000002','YOPI','2018-06-04',0,'','','','RAWAT JALAN',40,'BANDUNG\r\n','17125511','P'),(44,'0000000004','00000006','INSANI AMELIA','2018-06-04',0,'','','','EMERGENSI',18,'SUKABUMI\r\n','','P'),(45,'0000000005','00000004','TRENA WIJAYA','2018-06-05',0,'','','','CICU HCCU',38,'CIMAHI\r\n','199281','P'),(46,'0000000006','00000005','BANG JACK','2018-06-05',0,'','','','ANGIOGRAFI KORONER PCI',18,'BANDUNG\r\n','','P'),(47,'0000000007','00000007','ILYAS','2018-06-05',0,'','','','ELECTROPHYSIOLOGY',10,'','','P'),(48,'0000000008','00000005','BANG JACK','2018-06-05',0,'','','','RAWAT INAP',18,'BANDUNG\r\n','','P'),(49,'0000000009','00000007','ILYAS','2018-06-05',0,'','','','RAWAT JALAN',10,'','','P'),(50,'0000000010','00000006','INSANI AMELIA','2018-06-05',0,'','','','EMERGENSI',18,'SUKABUMI\r\n','','P'),(51,'0000000011','00000003','PITBULL','2018-06-05',0,'','','','CICU HCCU',18,'SUBANG\r\n','725133221','P'),(52,'0000000012','00000004','TRENA WIJAYA','2018-06-05',0,'','','','ANGIOGRAFI KORONER PCI',38,'CIMAHI\r\n','199281','P'),(53,'0000000013','00000002','YOPI','2018-06-05',0,'','','','ELECTROPHYSIOLOGY',40,'BANDUNG\r\n','17125511','P'),(54,'0000000014','00000001','YUAN','2018-06-05',0,'','','','EKOKARDIOGRAFI',31,'BANDUNG','','P'),(55,'0000000015','00000008','AZAM','2018-06-05',0,'','','','TREADMILL',38,'JAKARTA','','P'),(56,'0000000016','00000009','UDIN','2018-06-05',0,'','','','VASKULAR',18,'','','P'),(57,'0000000017','00000010','DESI RATNA SARI','2018-06-05',0,'','','','REHABILITASI AND PREVENSI',28,'','','P'),(58,'0000000018','00000011','AULIA','2018-06-05',0,'','','','BEDAH JANTUNG',40,'','','P'),(59,'0000000019','00000011','AULIA','2018-06-05',0,'','','','RAWAT INAP',40,'','','P');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `register` ENABLE KEYS */;
 
@@ -1674,15 +3183,242 @@ CREATE TABLE `rehab` (
 
 /*!40000 ALTER TABLE `rehab` DISABLE KEYS */;
 LOCK TABLES `rehab` WRITE;
+INSERT INTO `rehab` VALUES ('0000000017','00000010','2018-06-05',0,'DESI RATNA SARI',0,0,0),('0000000020','00000005','2018-05-21',0,'BANG JACK',1,2,3);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `rehab` ENABLE KEYS */;
 
 --
--- Table structure for table `treadmill`
+-- Table structure for table `rehabsatu`
 --
 
-DROP TABLE IF EXISTS `treadmill`;
-CREATE TABLE `treadmill` (
+DROP TABLE IF EXISTS `rehabsatu`;
+CREATE TABLE `rehabsatu` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `kodep` varchar(20) default NULL,
+  `icd` varchar(50) default NULL,
+  `dm` char(1) default NULL,
+  `ckd` char(1) default NULL,
+  `ht` char(1) default NULL,
+  `sm` char(1) default NULL,
+  `osteorathis` char(1) default NULL,
+  `i` char(1) default NULL,
+  `ii` char(1) default NULL,
+  `iii` char(1) default NULL,
+  `iv` char(1) default NULL,
+  `lainsatu` varchar(60) default NULL,
+  `laindua` varchar(50) default NULL,
+  `laintiga` varchar(50) default NULL,
+  `lainempat` varchar(50) default NULL,
+  `merokok` char(1) default NULL,
+  `hipertensi` char(1) default NULL,
+  `diabetes` char(1) default NULL,
+  `dislipimedia` char(1) default NULL,
+  `overwight` char(1) default NULL,
+  `menopause` char(1) default NULL,
+  `riwayat` char(1) default NULL,
+  `masalah` char(1) default NULL,
+  `fisik` char(1) default NULL,
+  `stmerokok` char(1) default NULL,
+  `sejak` varchar(30) default NULL,
+  `keterangan` varchar(50) default NULL,
+  `depresi` char(1) default NULL,
+  `depscore` varchar(10) default NULL,
+  `ansietas` char(1) default NULL,
+  `anscore` varchar(10) default NULL,
+  `lainlain` varchar(30) default NULL,
+  `perilaku` char(1) default NULL,
+  `scoreprilaku` varchar(20) default NULL,
+  `angina` char(1) default NULL,
+  `lekas` char(1) default NULL,
+  `sesak` char(1) default NULL,
+  `lemas` char(1) default NULL,
+  `berdebar` char(1) default NULL,
+  `tidaktidur` char(1) default NULL,
+  `puisng` char(1) default NULL,
+  `batuk` char(1) default NULL,
+  `postop` char(1) default NULL,
+  `laind` varchar(30) default NULL,
+  `antiplatet` varchar(40) default NULL,
+  `ace` varchar(40) default NULL,
+  `arb` varchar(40) default NULL,
+  `ccb` varchar(40) default NULL,
+  `diuretik` varchar(40) default NULL,
+  `digitals` varchar(40) default NULL,
+  `statins` varchar(40) default NULL,
+  `anticoa` varchar(40) default NULL,
+  `antischemic` varchar(40) default NULL,
+  `lainc` varchar(40) default NULL,
+  `tglc` date default NULL,
+  `bb` float default NULL,
+  `tb` float default NULL,
+  `imt` varchar(10) default NULL,
+  `kategori` char(1) default NULL,
+  `sistolik` char(1) default NULL,
+  `diastolik` char(1) default NULL,
+  `nadi` varchar(10) default NULL,
+  `nafas` varchar(10) default NULL,
+  `lemak` varchar(20) default NULL,
+  `tgld` date default NULL,
+  `kolestrol` varchar(10) default NULL,
+  `ldl` varchar(10) default NULL,
+  `hdl` varchar(10) default NULL,
+  `tg` varchar(10) default NULL,
+  `crp` varchar(10) default NULL,
+  `ur` varchar(10) default NULL,
+  `cr` varchar(10) default NULL,
+  `gdp` varchar(10) default NULL,
+  `gdpp` varchar(10) default NULL,
+  `hba` varchar(10) default NULL,
+  `asam` varchar(10) default NULL,
+  `inr` varchar(10) default NULL,
+  `tglb` date default NULL,
+  `kesimpulan` varchar(100) default NULL,
+  `tgla` date default NULL,
+  `keimpulanth` varchar(100) default NULL,
+  `tgle` date default NULL,
+  `kesimpulanc` varchar(100) default NULL,
+  `komresvac` varchar(100) default NULL,
+  `komresvacd` varchar(100) default NULL,
+  `tglmulai` date default NULL,
+  `tglselesai` date default NULL,
+  `tglk` date default NULL,
+  `tempat` varchar(40) default NULL,
+  `jarak` varchar(10) default NULL,
+  `mets` varchar(10) default NULL,
+  `protokol` varchar(50) default NULL,
+  `waktu` varchar(20) default NULL,
+  `borg` varchar(20) default NULL,
+  `metsd` varchar(40) default NULL,
+  `mhr` varchar(20) default NULL,
+  `berhenti` varchar(70) default NULL,
+  `respon` varchar(40) default NULL,
+  `lainya` varchar(40) default NULL,
+  `stratifikasi` char(2) default NULL,
+  `cabg` char(1) default NULL,
+  `paps` char(1) default NULL,
+  `pciaps` char(1) default NULL,
+  `ska` char(1) default NULL,
+  `skad` char(1) default NULL,
+  `pasien` char(1) default NULL,
+  `katup` char(1) default NULL,
+  `konginital` char(1) default NULL,
+  `ppm` char(1) default NULL,
+  `chf` char(1) default NULL,
+  `pad` char(1) default NULL,
+  `nital` char(1) default NULL,
+  `icdd` char(1) default NULL,
+  `lainz` varchar(70) default NULL,
+  `jama` varchar(10) default NULL,
+  `jamad` varchar(10) default NULL,
+  `tgls` date default NULL,
+  `tglsd` date default NULL,
+  `jamb` varchar(10) default NULL,
+  `jambd` varchar(10) default NULL,
+  `tglt` date default NULL,
+  `tgltd` date default NULL,
+  `jamc` varchar(10) default NULL,
+  `jamcd` varchar(10) default NULL,
+  `tglu` date default NULL,
+  `tglud` date default NULL,
+  `jamd` varchar(10) default NULL,
+  `jamdd` varchar(10) default NULL,
+  `tglv` date default NULL,
+  `tglvd` date default NULL,
+  `jame` varchar(10) default NULL,
+  `jamed` varchar(10) default NULL,
+  `tglw` date default NULL,
+  `tglwd` date default NULL,
+  `frekuensi` varchar(40) default NULL,
+  `intensitas` varchar(40) default NULL,
+  `tipe` varchar(40) default NULL,
+  `waktud` varchar(40) default NULL,
+  `telemetri` varchar(40) default NULL,
+  `laink` varchar(40) default NULL,
+  `ikfr` varchar(40) default NULL,
+  `gizi` varchar(40) default NULL,
+  `psikologi` varchar(40) default NULL,
+  `tglkon` date default NULL,
+  `materi` varchar(40) default NULL,
+  `edukator` varchar(40) default NULL,
+  `tgllatih` date default NULL,
+  `jenisalat` varchar(40) default NULL,
+  `lamalatih` varchar(20) default NULL,
+  `intensitaslatih` varchar(40) default NULL,
+  `nadii` varchar(20) default NULL,
+  `nadid` varchar(20) default NULL,
+  `sistolikis` varchar(20) default NULL,
+  `diastolikis` varchar(20) default NULL,
+  `sialotikmaks` varchar(10) default NULL,
+  `diastolikmaks` varchar(20) default NULL,
+  `aritmia` char(1) default NULL,
+  `desaturasi` char(1) default NULL,
+  `komplikasi` varchar(40) default NULL,
+  `lainkom` varchar(40) default NULL,
+  `tgluji` date default NULL,
+  `tempatuji` varchar(40) default NULL,
+  `jarakuji` varchar(20) default NULL,
+  `metsuji` varchar(20) default NULL,
+  `protokoluji` varchar(40) default NULL,
+  `waktuuji` varchar(20) default NULL,
+  `borguji` varchar(20) default NULL,
+  `metsujid` varchar(20) default NULL,
+  `distedmhr` varchar(20) default NULL,
+  `berhentiuji` varchar(70) default NULL,
+  `iskemi` varchar(70) default NULL,
+  `lainuji` varchar(70) default NULL,
+  `tgllab` date default NULL,
+  `koles` varchar(20) default NULL,
+  `ldld` varchar(20) default NULL,
+  `hdld` varchar(20) default NULL,
+  `tgd` varchar(20) default NULL,
+  `hscrp` varchar(20) default NULL,
+  `urp` varchar(20) default NULL,
+  `crd` varchar(20) default NULL,
+  `gdpd` varchar(20) default NULL,
+  `gdppd` varchar(20) default NULL,
+  `habad` varchar(20) default NULL,
+  `asamurat` varchar(20) default NULL,
+  `inrd` varchar(20) default NULL,
+  `tglecho` date default NULL,
+  `lved` varchar(20) default NULL,
+  `lves` varchar(20) default NULL,
+  `ejeksi` varchar(20) default NULL,
+  `pendek` varchar(20) default NULL,
+  `vollved` varchar(20) default NULL,
+  `vollves` varchar(20) default NULL,
+  `lvmi` varchar(20) default NULL,
+  `ea` varchar(20) default NULL,
+  `ee` varchar(20) default NULL,
+  `mpap` varchar(20) default NULL,
+  `tgllaku` date default NULL,
+  `skorakhir` varchar(20) default NULL,
+  `baseline` varchar(50) default NULL,
+  `brachilis` varchar(50) default NULL,
+  `perubahan` varchar(40) default NULL,
+  `tgllrisiko` date default NULL,
+  `tempatre` varchar(40) default NULL,
+  `jarakre` varchar(20) default NULL,
+  `metsre` varchar(20) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rehabsatu`
+--
+
+
+/*!40000 ALTER TABLE `rehabsatu` DISABLE KEYS */;
+LOCK TABLES `rehabsatu` WRITE;
+INSERT INTO `rehabsatu` VALUES ('0000000020','00000005','S','Cholera','A','A','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30',0,0,'','','','','','','','1899-12-30','','','','','','','','','','','','','1899-12-30','','1899-12-30','','1899-12-30','','','','1899-12-30','1899-12-30','1899-12-30','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','','','','','','','','1899-12-30','','','1899-12-30','','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','1899-12-30','','','','','1899-12-30','','',''),('0000000017','00000010','A00.1','Cholera due to Vibrio cholerae 01, biovar eltor','','','','','','','','','','','','','','A','A','','','A','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30',0,0,'','','','','','','','1899-12-30','','','','','','','','','','','','','1899-12-30','','1899-12-30','','1899-12-30','','','','1899-12-30','1899-12-30','1899-12-30','','','','','','','','','','','','','','','','','','','','','','','','','','','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','1899-12-30','1899-12-30','','','','','','','','','','1899-12-30','','','1899-12-30','','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','1899-12-30','','','','','','','','','','','','','1899-12-30','','','','','','','','','','','1899-12-30','','','','','1899-12-30','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `rehabsatu` ENABLE KEYS */;
+
+--
+-- Table structure for table `treadmil`
+--
+
+DROP TABLE IF EXISTS `treadmil`;
+CREATE TABLE `treadmil` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
@@ -1696,14 +3432,86 @@ CREATE TABLE `treadmill` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `treadmill`
+-- Dumping data for table `treadmil`
 --
 
 
-/*!40000 ALTER TABLE `treadmill` DISABLE KEYS */;
-LOCK TABLES `treadmill` WRITE;
+/*!40000 ALTER TABLE `treadmil` DISABLE KEYS */;
+LOCK TABLES `treadmil` WRITE;
+INSERT INTO `treadmil` VALUES ('0000000018','00000003','2018-05-19',18,'PITBULL',1,2,' 3',' 4',' 5'),('0000000015','00000008','2018-06-05',38,'AZAM',0,0,'','','');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `treadmill` ENABLE KEYS */;
+/*!40000 ALTER TABLE `treadmil` ENABLE KEYS */;
+
+--
+-- Table structure for table `treadmilsatu`
+--
+
+DROP TABLE IF EXISTS `treadmilsatu`;
+CREATE TABLE `treadmilsatu` (
+  `idperiksa` varchar(20) default NULL,
+  `idpasien` varchar(20) default NULL,
+  `tgl` date default NULL,
+  `tglx` date default NULL,
+  `mesin` varchar(70) default NULL,
+  `pemeriksa` varchar(70) default NULL,
+  `tgld` date default NULL,
+  `pemeriksad` varchar(50) default NULL,
+  `indikasi` varchar(40) default NULL,
+  `exercise` varchar(50) default NULL,
+  `hr` varchar(40) default NULL,
+  `maxhr` varchar(50) default NULL,
+  `bp` varchar(50) default NULL,
+  `maxbp` varchar(50) default NULL,
+  `workload` varchar(40) default NULL,
+  `aritmia` varchar(40) default NULL,
+  `st` varchar(40) default NULL,
+  `reserve` varchar(40) default NULL,
+  `recove` varchar(40) default NULL,
+  `reason` varchar(40) default NULL,
+  `ecg` varchar(40) default NULL,
+  `capacity` varchar(40) default NULL,
+  `hrs` varchar(40) default NULL,
+  `bps` varchar(40) default NULL,
+  `chest` varchar(40) default NULL,
+  `arithimia` varchar(40) default NULL,
+  `changes` varchar(40) default NULL,
+  `impression` varchar(40) default NULL,
+  `tglc` date default NULL,
+  `mesinc` varchar(40) default NULL,
+  `pemeriksac` varchar(40) default NULL,
+  `tgle` date default NULL,
+  `pemeriksae` varchar(40) default NULL,
+  `femoralis` char(1) default NULL,
+  `poplotes` char(1) default NULL,
+  `safena` char(1) default NULL,
+  `thrombus` varchar(40) default NULL,
+  `cus` varchar(40) default NULL,
+  `augmentasi` varchar(40) default NULL,
+  `valsava` varchar(40) default NULL,
+  `refluks` varchar(40) default NULL,
+  `pedis` char(1) default NULL,
+  `anterior` char(1) default NULL,
+  `posteir` char(1) default NULL,
+  `politea` char(1) default NULL,
+  `flow` varchar(40) default NULL,
+  `pola` varchar(40) default NULL,
+  `plak` varchar(40) default NULL,
+  `stenosis` varchar(40) default NULL,
+  `thrombusd` varchar(40) default NULL,
+  `vena` varchar(200) default NULL,
+  `arteri` varchar(200) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `treadmilsatu`
+--
+
+
+/*!40000 ALTER TABLE `treadmilsatu` DISABLE KEYS */;
+LOCK TABLES `treadmilsatu` WRITE;
+INSERT INTO `treadmilsatu` VALUES ('0000000018','00000003','0000-00-00','2018-05-20','OPERI','YOPI','2018-05-19',' YUDA','13','2',' 3','3',' 5',' 6',' 7',' 8',' 9','10',' 11','12','2',' 234','',' 2','','','','','1899-12-30','','','1899-12-30','','','','','','','','','','','','','','','','','','','',''),('0000000015','00000008','0000-00-00','1899-12-30',' EE',' EDRTTT','2018-06-02','','','','','','','','','','','','','','','','','','','','','','1899-12-30','','','1899-12-30','','Y','N','Y','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `treadmilsatu` ENABLE KEYS */;
 
 --
 -- Table structure for table `ugd`
@@ -1714,11 +3522,9 @@ CREATE TABLE `ugd` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
+  `kodep` varchar(15) default NULL,
   `umur` int(11) default NULL,
-  `nama` varchar(70) default NULL,
-  `bb` float default NULL,
-  `tb` float default NULL,
-  `bmi` float default NULL
+  `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1728,72 +3534,67 @@ CREATE TABLE `ugd` (
 
 /*!40000 ALTER TABLE `ugd` DISABLE KEYS */;
 LOCK TABLES `ugd` WRITE;
-INSERT INTO `ugd` VALUES ('000005','000006','2017-12-10',0,'Tatang Supriatna',0,0,0),('000006','000005','2018-01-16',17,'ARY PURNAMA',0,0,0);
+INSERT INTO `ugd` VALUES ('000011','000009','2018-05-04','A01.1',0,'ASEP SOPANDI'),('0000000004','00000006','2018-06-04','S',18,'INSANI AMELIA'),('0000000010','00000006','2018-06-05','',18,'INSANI AMELIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `ugd` ENABLE KEYS */;
 
 --
--- Table structure for table `ugdanamnesis`
+-- Table structure for table `ugddiagnosa`
 --
 
-DROP TABLE IF EXISTS `ugdanamnesis`;
-CREATE TABLE `ugdanamnesis` (
+DROP TABLE IF EXISTS `ugddiagnosa`;
+CREATE TABLE `ugddiagnosa` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `bengkak` char(1) default NULL,
-  `kebiruan` char(1) default NULL,
-  `perut` char(1) default NULL,
-  `spell` char(1) default NULL,
-  `syncope` char(1) default NULL,
-  `ispb` char(1) default NULL,
-  `berdebar` char(1) default NULL,
-  `feeding` char(1) default NULL,
-  `demam` char(1) default NULL,
-  `congenital` char(1) default NULL,
-  `menopause` char(1) default NULL,
-  `premature` char(1) default NULL,
-  `acs` char(1) default NULL,
-  `nama` varchar(70) default NULL
+  `kodep` varchar(15) default NULL,
+  `icd` varchar(50) default NULL,
+  `nama` varchar(70) default NULL,
+  `tgl` date default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ugdanamnesis`
+-- Dumping data for table `ugddiagnosa`
 --
 
 
-/*!40000 ALTER TABLE `ugdanamnesis` DISABLE KEYS */;
-LOCK TABLES `ugdanamnesis` WRITE;
-INSERT INTO `ugdanamnesis` VALUES ('000005','000006','2017-12-10','','','','','','','','','','','','','','Tatang Supriatna'),('000006','000005','2018-01-16','Y','','','','','Y','','Y','','','Y','','','ARY PURNAMA');
+/*!40000 ALTER TABLE `ugddiagnosa` DISABLE KEYS */;
+LOCK TABLES `ugddiagnosa` WRITE;
+INSERT INTO `ugddiagnosa` VALUES ('000011','000009','','','ASEP SOPANDI','2018-05-04'),('0000000004','00000006','','','INSANI AMELIA','2018-06-04'),('0000000010','00000006','','','INSANI AMELIA','2018-06-05');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `ugdanamnesis` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ugddiagnosa` ENABLE KEYS */;
 
 --
--- Table structure for table `ugddiagnosautama`
+-- Table structure for table `ugddischarge`
 --
 
-DROP TABLE IF EXISTS `ugddiagnosautama`;
-CREATE TABLE `ugddiagnosautama` (
+DROP TABLE IF EXISTS `ugddischarge`;
+CREATE TABLE `ugddischarge` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `kodep` varchar(10) default NULL,
-  `icd` varchar(70) default NULL,
-  `kodepd` varchar(10) default NULL,
-  `icdd` varchar(70) default NULL,
-  `nama` varchar(79) default NULL
+  `tgldischarge` date default NULL,
+  `outcome` varchar(25) default NULL,
+  `aritmia` char(1) default NULL,
+  `syok` char(1) default NULL,
+  `infeksi` char(1) default NULL,
+  `gagal` char(1) default NULL,
+  `lainnya` varchar(30) default NULL,
+  `nama` varchar(70) default NULL,
+  `lanjut` char(1) default NULL,
+  `lanjutd` char(1) default NULL,
+  `lanjutc` char(1) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ugddiagnosautama`
+-- Dumping data for table `ugddischarge`
 --
 
 
-/*!40000 ALTER TABLE `ugddiagnosautama` DISABLE KEYS */;
-LOCK TABLES `ugddiagnosautama` WRITE;
-INSERT INTO `ugddiagnosautama` VALUES ('000005','000006','2017-12-10','','','','','Tatang Supriatna'),('000006','000005','2018-01-16','S','Cholera','A02.0','Salmonella enteritis','ARY PURNAMA');
+/*!40000 ALTER TABLE `ugddischarge` DISABLE KEYS */;
+LOCK TABLES `ugddischarge` WRITE;
+INSERT INTO `ugddischarge` VALUES ('000011','000009','2018-05-04','1899-12-30','','','','','','','ASEP SOPANDI','','',''),('0000000004','00000006','2018-06-04','1899-12-30','','','','','','','INSANI AMELIA','','',''),('0000000010','00000006','2018-06-05','1899-12-30','','','','','','','INSANI AMELIA','','','');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `ugddiagnosautama` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ugddischarge` ENABLE KEYS */;
 
 --
 -- Table structure for table `ugdekg`
@@ -1804,45 +3605,39 @@ CREATE TABLE `ugdekg` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `Ritme` char(1) default NULL,
-  `Atrial` char(1) default NULL,
-  `LAD` char(1) default NULL,
-  `QRS` char(1) default NULL,
-  `GelP` char(1) default NULL,
-  `pilgelp` char(1) default NULL,
+  `ritme` char(1) default NULL,
+  `takikardi` char(1) default NULL,
+  `bradikardi` char(1) default NULL,
+  `atrial` char(1) default NULL,
+  `avnrt` char(1) default NULL,
+  `avrt` char(1) default NULL,
+  `vt` char(1) default NULL,
+  `avblock` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
+  `lad` char(1) default NULL,
+  `rad` varchar(10) default NULL,
+  `superoir` varchar(10) default NULL,
+  `durasi` varchar(10) default NULL,
+  `qpat` varchar(10) default NULL,
+  `rbb` varchar(10) default NULL,
+  `lbb` varchar(10) default NULL,
+  `vcd` varchar(10) default NULL,
+  `rate` varchar(10) default NULL,
+  `elektrik` char(2) default NULL,
+  `depresi` char(2) default NULL,
+  `elevasi` char(2) default NULL,
+  `pwa` char(1) default NULL,
+  `isipwa` varchar(10) default NULL,
   `pwd` char(1) default NULL,
-  `isipwd` varchar(20) default NULL,
-  `PR` char(1) default NULL,
-  `isipr` varchar(30) default NULL,
-  `Gelq` char(1) default NULL,
-  `isigelq` char(1) default NULL,
-  `RVH` char(1) default NULL,
-  `LVH` char(1) default NULL,
-  `AVBlock` char(1) default NULL,
-  `isiavblck` varchar(30) default NULL,
-  `Lainnya` varchar(50) default NULL,
-  `Takikardi` char(1) default NULL,
-  `Bradikardi` varchar(30) default NULL,
-  `Flutter` char(1) default NULL,
-  `Superior` char(1) default NULL,
-  `RAD` char(1) default NULL,
-  `Segmen` char(1) default NULL,
-  `isisegmen` char(1) default NULL,
-  `QT` char(1) default NULL,
-  `isiqt` varchar(30) default NULL,
-  `Durasi` char(1) default NULL,
-  `isidurasi` varchar(30) default NULL,
-  `Gel` char(1) default NULL,
-  `isigel` varchar(30) default NULL,
-  `QTc` char(1) default NULL,
-  `isiqtc` varchar(30) default NULL,
-  `LAE` char(1) default NULL,
-  `RAE` char(1) default NULL,
-  `Extrasystole` char(1) default NULL,
-  `isiExtrasystole` char(1) default NULL,
-  `nama` varchar(70) default NULL,
-  `isilain` varchar(70) default NULL,
-  `AtrialD` char(1) default NULL
+  `isipwd` varchar(10) default NULL,
+  `normal` char(1) default NULL,
+  `inversi` char(1) default NULL,
+  `ttall` char(1) default NULL,
+  `isiprinterval` varchar(10) default NULL,
+  `isiqt` varchar(10) default NULL,
+  `isirr` varchar(10) default NULL,
+  `isical` varchar(10) default NULL,
+  `nama` varchar(78) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1852,9 +3647,40 @@ CREATE TABLE `ugdekg` (
 
 /*!40000 ALTER TABLE `ugdekg` DISABLE KEYS */;
 LOCK TABLES `ugdekg` WRITE;
-INSERT INTO `ugdekg` VALUES ('000005','000006','2017-12-10','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Tatang Supriatna','',''),('000006','000005','2018-01-16','','','Y','Y','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ARY PURNAMA','','');
+INSERT INTO `ugdekg` VALUES ('000011','000009','2018-05-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ASEP SOPANDI'),('0000000004','00000006','2018-06-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI AMELIA'),('0000000010','00000006','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI AMELIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `ugdekg` ENABLE KEYS */;
+
+--
+-- Table structure for table `ugdfaktor`
+--
+
+DROP TABLE IF EXISTS `ugdfaktor`;
+CREATE TABLE `ugdfaktor` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `hipertensi` char(1) default NULL,
+  `merokok` char(1) default NULL,
+  `riwayat` char(1) default NULL,
+  `obesitas` char(1) default NULL,
+  `dm` char(1) default NULL,
+  `dislipidemia` char(1) default NULL,
+  `menopause` char(1) default NULL,
+  `lainnya` varchar(70) default NULL,
+  `tgl` date default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ugdfaktor`
+--
+
+
+/*!40000 ALTER TABLE `ugdfaktor` DISABLE KEYS */;
+LOCK TABLES `ugdfaktor` WRITE;
+INSERT INTO `ugdfaktor` VALUES ('000011','000009','','Y','','','','Y','','','2018-05-04','ASEP SOPANDI'),('0000000004','00000006','','Y','','','','','','','2018-06-04','INSANI AMELIA'),('0000000010','00000006','','','Y','','','Y','Y','','2018-06-05','INSANI AMELIA');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `ugdfaktor` ENABLE KEYS */;
 
 --
 -- Table structure for table `ugdfisik`
@@ -1864,45 +3690,17 @@ DROP TABLE IF EXISTS `ugdfisik`;
 CREATE TABLE `ugdfisik` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `sbp` float default NULL,
-  `dbp` float default NULL,
-  `hr` float default NULL,
-  `n` float default NULL,
-  `rr` float default NULL,
-  `suhu` float default NULL,
-  `gcs` varchar(10) default NULL,
-  `anemis` char(1) default NULL,
-  `JVP` char(1) default NULL,
-  `Kardiomegali` char(1) default NULL,
-  `Heave` char(1) default NULL,
-  `Apeks` char(1) default NULL,
-  `Thrill` char(1) default NULL,
-  `S1` char(1) default NULL,
-  `isis1` varchar(15) default NULL,
-  `S2` char(1) default NULL,
-  `isis2` varchar(15) default NULL,
+  `jvp` char(1) default NULL,
+  `kardiomegali` char(1) default NULL,
+  `bj` char(1) default NULL,
   `s3` char(1) default NULL,
   `s4` char(1) default NULL,
-  `Hepatomegali` char(1) default NULL,
-  `Ascites` char(1) default NULL,
-  `Edema` char(1) default NULL,
-  `Clubbing` char(1) default NULL,
-  `Akral` char(1) default NULL,
-  `CRt` char(1) default NULL,
-  `Peripheral` char(1) default NULL,
-  `EDM` char(1) default NULL,
-  `isiedm` varchar(20) default NULL,
-  `ESM` char(1) default NULL,
-  `isiesm` varchar(20) default NULL,
-  `PSM` char(1) default NULL,
-  `isipsm` varchar(20) default NULL,
-  `Carvallo` char(1) default NULL,
-  `Opening` char(1) default NULL,
-  `Ejection` char(1) default NULL,
-  `Other` char(1) default NULL,
-  `isiothers` varchar(20) default NULL,
-  `Midsystolic` char(1) default NULL,
+  `murmurreg` char(1) default NULL,
+  `murmurstenosis` char(1) default NULL,
+  `rhonkhi` char(1) default NULL,
+  `hepatomegali` char(1) default NULL,
+  `edema` char(1) default NULL,
+  `tgl` date default NULL,
   `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -1913,38 +3711,42 @@ CREATE TABLE `ugdfisik` (
 
 /*!40000 ALTER TABLE `ugdfisik` DISABLE KEYS */;
 LOCK TABLES `ugdfisik` WRITE;
-INSERT INTO `ugdfisik` VALUES ('000005','000006','2017-12-10',0,0,0,0,0,0,'','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Tatang Supriatna'),('000006','000005','2018-01-16',100,121,0,0,12,12,'11','Y','Y','Y','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
+INSERT INTO `ugdfisik` VALUES ('000011','000009','','','','','','','','','','','2018-05-04','ASEP SOPANDI'),('0000000004','00000006','','','','','','','','','','','2018-06-04','INSANI AMELIA'),('0000000010','00000006','','','','','','','','','','','2018-06-05','INSANI AMELIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `ugdfisik` ENABLE KEYS */;
 
 --
--- Table structure for table `ugdkomorbid`
+-- Table structure for table `ugdkeluhan`
 --
 
-DROP TABLE IF EXISTS `ugdkomorbid`;
-CREATE TABLE `ugdkomorbid` (
+DROP TABLE IF EXISTS `ugdkeluhan`;
+CREATE TABLE `ugdkeluhan` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
+  `keluhan` char(1) default NULL,
+  `bengkak` char(1) default NULL,
+  `pingsan` char(1) default NULL,
+  `hampir` char(1) default NULL,
+  `nyeri` char(1) default NULL,
+  `nyeridada` char(1) default NULL,
+  `berdebar` char(1) default NULL,
+  `turunsadar` char(1) default NULL,
+  `lemah` char(1) default NULL,
+  `lainnya` varchar(70) default NULL,
   `tgl` date default NULL,
-  `dm` char(1) default NULL,
-  `sequele` char(1) default NULL,
-  `sle` char(1) default NULL,
-  `dislipidemia` char(1) default NULL,
-  `pneumonia` char(1) default NULL,
-  `chronic` char(1) default NULL,
-  `nama` varchar(60) default NULL
+  `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ugdkomorbid`
+-- Dumping data for table `ugdkeluhan`
 --
 
 
-/*!40000 ALTER TABLE `ugdkomorbid` DISABLE KEYS */;
-LOCK TABLES `ugdkomorbid` WRITE;
-INSERT INTO `ugdkomorbid` VALUES ('000005','000006','2017-12-10','','','','','','','Tatang Supriatna'),('000006','000005','2018-01-16','Y','','Y','Y','','Y','ARY PURNAMA');
+/*!40000 ALTER TABLE `ugdkeluhan` DISABLE KEYS */;
+LOCK TABLES `ugdkeluhan` WRITE;
+INSERT INTO `ugdkeluhan` VALUES ('000011','000009','Y','','','','Y','Y','','','','','2018-05-04','ASEP SOPANDI'),('0000000004','00000006','Y','','','','','Y','Y','','','','2018-06-04','INSANI AMELIA'),('0000000010','00000006','','','','Y','','Y','','','','','2018-06-05','INSANI AMELIA');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `ugdkomorbid` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ugdkeluhan` ENABLE KEYS */;
 
 --
 -- Table structure for table `ugdlab`
@@ -1955,37 +3757,44 @@ CREATE TABLE `ugdlab` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `Hb` varchar(30) default NULL,
-  `Ht` varchar(30) default NULL,
-  `Er` varchar(30) default NULL,
+  `hb` varchar(30) default NULL,
+  `ht` varchar(30) default NULL,
   `l` varchar(30) default NULL,
   `tr` varchar(30) default NULL,
-  `MCV` varchar(30) default NULL,
-  `MCH` varchar(30) default NULL,
-  `MCHC` varchar(30) default NULL,
-  `Ur` varchar(30) default NULL,
-  `Cr` varchar(30) default NULL,
+  `ur` varchar(30) default NULL,
+  `kr` varchar(30) default NULL,
   `na` varchar(30) default NULL,
   `k` varchar(30) default NULL,
   `ca` varchar(30) default NULL,
   `mg` varchar(30) default NULL,
-  `SGOT` varchar(30) default NULL,
-  `SGPT` varchar(30) default NULL,
-  `BNP` varchar(30) default NULL,
-  `NT` varchar(30) default NULL,
-  `Troponin` varchar(30) default NULL,
-  `Troponinl` varchar(30) default NULL,
-  `CKMB` varchar(30) default NULL,
-  `GDS` varchar(30) default NULL,
-  `GD2JPP` varchar(30) default NULL,
-  `GDP` varchar(30) default NULL,
-  `Hba1c` varchar(30) default NULL,
-  `Diff` varchar(30) default NULL,
-  `PT` varchar(30) default NULL,
-  `APTT` varchar(30) default NULL,
-  `INR` varchar(30) default NULL,
-  `Lainya` varchar(30) default NULL,
-  `nama` varchar(70) default NULL
+  `crp` varchar(30) default NULL,
+  `bnp` varchar(30) default NULL,
+  `kol` varchar(30) default NULL,
+  `ldl` varchar(30) default NULL,
+  `hdl` varchar(30) default NULL,
+  `tg` varchar(30) default NULL,
+  `gds` varchar(30) default NULL,
+  `gdp` varchar(30) default NULL,
+  `sgot` varchar(30) default NULL,
+  `pt` varchar(30) default NULL,
+  `ptt` varchar(30) default NULL,
+  `inr` varchar(30) default NULL,
+  `trop` varchar(30) default NULL,
+  `gdpp` varchar(30) default NULL,
+  `hba` varchar(30) default NULL,
+  `sgpt` varchar(30) default NULL,
+  `basofil` varchar(30) default NULL,
+  `eosionofil` varchar(30) default NULL,
+  `batang` varchar(30) default NULL,
+  `segmen` varchar(30) default NULL,
+  `limfosit` varchar(30) default NULL,
+  `monosit` varchar(30) default NULL,
+  `laktat` varchar(30) default NULL,
+  `fibrinogen` varchar(30) default NULL,
+  `dimer` varchar(30) default NULL,
+  `lainya` varchar(30) default NULL,
+  `nama` varchar(70) default NULL,
+  `tropd` varchar(30) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -1995,95 +3804,97 @@ CREATE TABLE `ugdlab` (
 
 /*!40000 ALTER TABLE `ugdlab` DISABLE KEYS */;
 LOCK TABLES `ugdlab` WRITE;
-INSERT INTO `ugdlab` VALUES ('000005','000006','2017-12-10','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Tatang Supriatna'),('000006','000005','2018-01-16','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ARY PURNAMA');
+INSERT INTO `ugdlab` VALUES ('000011','000009','2018-05-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','ASEP SOPANDI',''),('0000000004','00000006','2018-06-04','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI AMELIA',''),('0000000010','00000006','2018-06-05','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','INSANI AMELIA','');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `ugdlab` ENABLE KEYS */;
 
 --
--- Table structure for table `ugdrhc`
+-- Table structure for table `ugdmedikamentosa`
 --
 
-DROP TABLE IF EXISTS `ugdrhc`;
-CREATE TABLE `ugdrhc` (
+DROP TABLE IF EXISTS `ugdmedikamentosa`;
+CREATE TABLE `ugdmedikamentosa` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `ra` char(1) default NULL,
-  `rv` char(1) default NULL,
-  `PCWP` char(1) default NULL,
-  `IVC` char(1) default NULL,
-  `SVC` char(1) default NULL,
-  `Ao` char(1) default NULL,
-  `PA` char(1) default NULL,
-  `PV` char(1) default NULL,
-  `QpQs` char(1) default NULL,
-  `PARI` char(1) default NULL,
+  `aspirin` char(1) default NULL,
+  `cpg` char(1) default NULL,
+  `ticagrelor` char(1) default NULL,
+  `dobutamin` char(1) default NULL,
+  `dopamin` char(1) default NULL,
+  `ufh` char(1) default NULL,
+  `enoxaparin` char(1) default NULL,
+  `fondaparinux` char(1) default NULL,
+  `norepinefrin` char(1) default NULL,
+  `epinephrine` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
+  `bisoprol` char(1) default NULL,
+  `carvedilol` char(1) default NULL,
+  `captopril` char(1) default NULL,
+  `eamipril` char(1) default NULL,
+  `lisinopril` char(1) default NULL,
+  `morfin` char(1) default NULL,
+  `nitrogliserin` char(1) default NULL,
+  `sulfas` char(1) default NULL,
+  `bicarbonat` char(1) default NULL,
+  `magnesium` char(1) default NULL,
+  `lidocainev` char(3) default NULL,
+  `amiodaron` char(1) default NULL,
+  `kandesartan` char(1) default NULL,
+  `irbesartan` char(1) default NULL,
+  `losartan` char(1) default NULL,
+  `simvastatin` char(1) default NULL,
+  `atorvastatin` char(1) default NULL,
+  `rosurvastatin` char(1) default NULL,
+  `nama` varchar(70) default NULL,
+  `lainsatu` varchar(20) default NULL,
+  `laindua` varchar(20) default NULL,
+  `laintiga` varchar(20) default NULL,
+  `lainempat` varchar(20) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ugdmedikamentosa`
+--
+
+
+/*!40000 ALTER TABLE `ugdmedikamentosa` DISABLE KEYS */;
+LOCK TABLES `ugdmedikamentosa` WRITE;
+INSERT INTO `ugdmedikamentosa` VALUES ('000011','000009','2018-05-04','A','A','','','','','','','','','31','','','','','','','','','','','','','','','','','','','ASEP SOPANDI','','','',''),('0000000004','00000006','2018-06-04','','','','','','','','','','','18','','','','','','','','','','','','','','','','','','','INSANI AMELIA','','','',''),('0000000010','00000006','2018-06-05','','','','','','','','','','','18','','','','','','','','','','','','','','','','','','','INSANI AMELIA','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `ugdmedikamentosa` ENABLE KEYS */;
+
+--
+-- Table structure for table `ugdstraf`
+--
+
+DROP TABLE IF EXISTS `ugdstraf`;
+CREATE TABLE `ugdstraf` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `tgl` date default NULL,
+  `acs` varchar(20) default NULL,
+  `cha` varchar(20) default NULL,
+  `hasbled` varchar(20) default NULL,
+  `pe` varchar(20) default NULL,
+  `pesi` varchar(20) default NULL,
+  `dvt` varchar(20) default NULL,
+  `egisys` varchar(20) default NULL,
+  `addd` varchar(20) default NULL,
+  `ascud` varchar(20) default NULL,
   `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ugdrhc`
+-- Dumping data for table `ugdstraf`
 --
 
 
-/*!40000 ALTER TABLE `ugdrhc` DISABLE KEYS */;
-LOCK TABLES `ugdrhc` WRITE;
-INSERT INTO `ugdrhc` VALUES ('000005','000006','2017-12-10','','','','','','','','','','','Tatang Supriatna'),('000006','000005','2018-01-16','','','','','','','','','','','ARY PURNAMA');
+/*!40000 ALTER TABLE `ugdstraf` DISABLE KEYS */;
+LOCK TABLES `ugdstraf` WRITE;
+INSERT INTO `ugdstraf` VALUES ('000011','000009','2018-05-04','','','','','','','','','','ASEP SOPANDI'),('0000000004','00000006','2018-06-04','','','','','','','','','','INSANI AMELIA'),('0000000010','00000006','2018-06-05','','','','','','','','','','INSANI AMELIA');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `ugdrhc` ENABLE KEYS */;
-
---
--- Table structure for table `ugdspm`
---
-
-DROP TABLE IF EXISTS `ugdspm`;
-CREATE TABLE `ugdspm` (
-  `idperiksa` varchar(20) default '0',
-  `idpasien` varchar(20) default NULL,
-  `tgl` date default NULL,
-  `Anterior` char(1) default NULL,
-  `Anteroseptal` char(1) default NULL,
-  `Anterolateral` char(1) default NULL,
-  `Inferolateral` char(1) default NULL,
-  `Inferior` char(1) default NULL,
-  `Inferoseptal` char(1) default NULL,
-  `Apikalanterior` char(1) default NULL,
-  `Apikalseptal` char(1) default NULL,
-  `Apikalinferior` char(1) default NULL,
-  `Apikalseptald` char(1) default NULL,
-  `Anteriord` char(1) default NULL,
-  `Anteroseptald` char(1) default NULL,
-  `Anterolaterald` char(1) default NULL,
-  `Inferolaterald` char(1) default NULL,
-  `Inferiord` char(1) default NULL,
-  `Inferoseptald` char(1) default NULL,
-  `Apikalanteriord` char(1) default NULL,
-  `Apikalseptaldd` char(1) default NULL,
-  `Apikalinferiord` char(1) default NULL,
-  `Apikalinferiordd` char(1) default NULL,
-  `defanteroir` char(1) default NULL,
-  `defanteroseptal` char(1) default NULL,
-  `defanterolateral` char(1) default NULL,
-  `definferolateral` char(1) default NULL,
-  `definferoir` char(1) default NULL,
-  `definferoseptal` char(1) default NULL,
-  `defapikalanterior` char(1) default NULL,
-  `defapikalseptal` char(1) default NULL,
-  `defapikalinferior` char(1) default NULL,
-  `defapikalseptald` char(1) default NULL,
-  `nama` varchar(70) default NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `ugdspm`
---
-
-
-/*!40000 ALTER TABLE `ugdspm` DISABLE KEYS */;
-LOCK TABLES `ugdspm` WRITE;
-INSERT INTO `ugdspm` VALUES ('000005','000006','2017-12-10','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','Tatang Supriatna'),('000006','000005','2018-01-16','','','','','','Y','','','','','','','','','','','','','','','','Y','','Y','','','','Y','','','ARY PURNAMA');
-UNLOCK TABLES;
-/*!40000 ALTER TABLE `ugdspm` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ugdstraf` ENABLE KEYS */;
 
 --
 -- Table structure for table `ugdthorax`
@@ -2094,16 +3905,17 @@ CREATE TABLE `ugdthorax` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
   `tgl` date default NULL,
-  `CTR` varchar(30) default NULL,
-  `aorta` varchar(30) default NULL,
-  `pulmonal` varchar(30) default NULL,
-  `Pinggang` varchar(30) default NULL,
+  `kardiomegali` char(1) default NULL,
+  `ictus` varchar(15) default NULL,
+  `ctr` varchar(5) default NULL,
+  `paru` char(1) default NULL,
+  `aorta` varchar(15) default NULL,
+  `pulmonal` varchar(15) default NULL,
+  `pinggang` varchar(15) default NULL,
   `contour` char(1) default NULL,
-  `Apex` varchar(30) default NULL,
-  `Kerley` char(1) default NULL,
-  `Kranialisasi` char(1) default NULL,
-  `Batwing` char(1) default NULL,
-  `lainlain` varchar(30) default NULL,
+  `infitrat` char(1) default NULL,
+  `lokasi` varchar(25) default NULL,
+  `lainnya` varchar(50) default NULL,
   `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -2114,52 +3926,41 @@ CREATE TABLE `ugdthorax` (
 
 /*!40000 ALTER TABLE `ugdthorax` DISABLE KEYS */;
 LOCK TABLES `ugdthorax` WRITE;
-INSERT INTO `ugdthorax` VALUES ('000005','000006','2017-12-10','','','','','','','','','','','Tatang Supriatna'),('000006','000005','2018-01-16','','','','','Y','Terangkat','Y','','','','ARY PURNAMA');
+INSERT INTO `ugdthorax` VALUES ('000011','000009','2018-05-04','','','','','','','','','','','','ASEP SOPANDI'),('0000000004','00000006','2018-06-04','','','','','','','','','','','','INSANI AMELIA'),('0000000010','00000006','2018-06-05','','','','','','','','','','','','INSANI AMELIA');
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `ugdthorax` ENABLE KEYS */;
 
 --
--- Table structure for table `ugdviability`
+-- Table structure for table `ugdvital`
 --
 
-DROP TABLE IF EXISTS `ugdviability`;
-CREATE TABLE `ugdviability` (
+DROP TABLE IF EXISTS `ugdvital`;
+CREATE TABLE `ugdvital` (
   `idperiksa` varchar(20) default '0',
   `idpasien` varchar(20) default NULL,
+  `umum` char(1) default NULL,
+  `sadar` char(1) default NULL,
+  `tekanan` varchar(15) default NULL,
+  `tekanand` varchar(15) default NULL,
+  `hr` char(1) default NULL,
+  `suhu` char(1) default NULL,
+  `suhulain` varchar(30) default NULL,
+  `rr` char(1) default NULL,
+  `sao` varchar(30) default NULL,
   `tgl` date default NULL,
-  `Anterior` char(1) default NULL,
-  `Anteroseptal` char(1) default NULL,
-  `Anterolateral` char(1) default NULL,
-  `Inferolateral` char(1) default NULL,
-  `Inferior` char(1) default NULL,
-  `Inferoseptal` char(1) default NULL,
-  `Apikalanterior` char(1) default NULL,
-  `Apikalseptal` char(1) default NULL,
-  `Apikalinferior` char(1) default NULL,
-  `Apikalseptald` char(1) default NULL,
-  `Anteriord` char(1) default NULL,
-  `Anteroseptald` char(1) default NULL,
-  `Anterolaterald` char(1) default NULL,
-  `Inferolaterald` char(1) default NULL,
-  `Inferiord` char(1) default NULL,
-  `Inferoseptald` char(1) default NULL,
-  `Apikalanteriord` char(1) default NULL,
-  `Apikalseptaldd` char(1) default NULL,
-  `Apikalinferiord` char(1) default NULL,
-  `Apikalseptalddd` char(1) default NULL,
-  `nama` tinyint(3) unsigned default NULL
+  `nama` varchar(70) default NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ugdviability`
+-- Dumping data for table `ugdvital`
 --
 
 
-/*!40000 ALTER TABLE `ugdviability` DISABLE KEYS */;
-LOCK TABLES `ugdviability` WRITE;
-INSERT INTO `ugdviability` VALUES ('000005','000006','2017-12-10','','','','','','','','','','','','','','','','','','','','',0),('000006','000005','2018-01-16','','','Y','Y','','Y','','','','','','Y','','','','','Y','','Y','',0);
+/*!40000 ALTER TABLE `ugdvital` DISABLE KEYS */;
+LOCK TABLES `ugdvital` WRITE;
+INSERT INTO `ugdvital` VALUES ('000011','000009','A','C','','','','','','A','','2018-05-04','ASEP SOPANDI'),('0000000004','00000006','A','B','','','B','','','','','2018-06-04','INSANI AMELIA'),('0000000010','00000006','','B','','','C','','','','','2018-06-05','INSANI AMELIA');
 UNLOCK TABLES;
-/*!40000 ALTER TABLE `ugdviability` ENABLE KEYS */;
+/*!40000 ALTER TABLE `ugdvital` ENABLE KEYS */;
 
 --
 -- Table structure for table `vaskular`
@@ -2184,8 +3985,415 @@ CREATE TABLE `vaskular` (
 
 /*!40000 ALTER TABLE `vaskular` DISABLE KEYS */;
 LOCK TABLES `vaskular` WRITE;
+INSERT INTO `vaskular` VALUES ('0000000019','00000002','2018-05-20',40,'YOPI',1,2,3),('0000000019','00000001','2018-05-20',31,'YUAN',1,2,3),('0000000016','00000009','2018-06-05',18,'UDIN',0,0,0);
 UNLOCK TABLES;
 /*!40000 ALTER TABLE `vaskular` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskulardiagnosa`
+--
+
+DROP TABLE IF EXISTS `vaskulardiagnosa`;
+CREATE TABLE `vaskulardiagnosa` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `kodep` varchar(15) default NULL,
+  `icd` varchar(50) default NULL,
+  `nama` varchar(70) default NULL,
+  `tgl` date default NULL,
+  `kodepd` varchar(15) default NULL,
+  `icdd` varchar(70) default NULL,
+  `kodepc` varchar(15) default NULL,
+  `icdc` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskulardiagnosa`
+--
+
+
+/*!40000 ALTER TABLE `vaskulardiagnosa` DISABLE KEYS */;
+LOCK TABLES `vaskulardiagnosa` WRITE;
+INSERT INTO `vaskulardiagnosa` VALUES ('0000000019','00000001','','','','0000-00-00','','','',''),('0000000016','00000009','','','','0000-00-00','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskulardiagnosa` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularekg`
+--
+
+DROP TABLE IF EXISTS `vaskularekg`;
+CREATE TABLE `vaskularekg` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `tgl` date default NULL,
+  `ritme` char(1) default NULL,
+  `takikardi` char(1) default NULL,
+  `bradikardi` char(1) default NULL,
+  `atrial` char(1) default NULL,
+  `avnrt` char(1) default NULL,
+  `avrt` char(1) default NULL,
+  `vt` char(1) default NULL,
+  `avblock` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
+  `lad` char(1) default NULL,
+  `rad` varchar(10) default NULL,
+  `superoir` varchar(10) default NULL,
+  `durasi` varchar(10) default NULL,
+  `qpat` varchar(10) default NULL,
+  `rbb` varchar(10) default NULL,
+  `lbb` varchar(10) default NULL,
+  `vcd` varchar(10) default NULL,
+  `rate` varchar(10) default NULL,
+  `elektrik` char(2) default NULL,
+  `depresi` char(2) default NULL,
+  `elevasi` char(2) default NULL,
+  `pwa` char(1) default NULL,
+  `isipwa` varchar(10) default NULL,
+  `pwd` char(1) default NULL,
+  `isipwd` varchar(10) default NULL,
+  `normal` char(1) default NULL,
+  `inversi` char(1) default NULL,
+  `ttall` char(1) default NULL,
+  `isiprinterval` varchar(10) default NULL,
+  `isiqt` varchar(10) default NULL,
+  `isirr` varchar(10) default NULL,
+  `isical` varchar(10) default NULL,
+  `nama` varchar(78) default NULL,
+  `mri` text,
+  `spm` text,
+  `ctcardiac` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularekg`
+--
+
+
+/*!40000 ALTER TABLE `vaskularekg` DISABLE KEYS */;
+LOCK TABLES `vaskularekg` WRITE;
+INSERT INTO `vaskularekg` VALUES ('0000000019','00000002','2018-05-20','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI','','',''),('0000000019','00000001','0000-00-00','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''),('0000000016','00000009','0000-00-00','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularekg` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularfaktor`
+--
+
+DROP TABLE IF EXISTS `vaskularfaktor`;
+CREATE TABLE `vaskularfaktor` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `hipertensi` char(1) default NULL,
+  `merokok` char(1) default NULL,
+  `riwayat` char(1) default NULL,
+  `obesitas` char(1) default NULL,
+  `dm` char(1) default NULL,
+  `dislipidemia` char(1) default NULL,
+  `menopause` char(1) default NULL,
+  `lainnya` varchar(70) default NULL,
+  `tgl` date default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularfaktor`
+--
+
+
+/*!40000 ALTER TABLE `vaskularfaktor` DISABLE KEYS */;
+LOCK TABLES `vaskularfaktor` WRITE;
+INSERT INTO `vaskularfaktor` VALUES ('0000000019','00000002','','','','','','','','','2018-05-20','YOPI'),('0000000019','00000001','','','','','','','','','0000-00-00',''),('0000000016','00000009','','','','','','','','','0000-00-00','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularfaktor` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularfisik`
+--
+
+DROP TABLE IF EXISTS `vaskularfisik`;
+CREATE TABLE `vaskularfisik` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `jvp` char(1) default NULL,
+  `kardiomegali` char(1) default NULL,
+  `bj` char(1) default NULL,
+  `s3` char(1) default NULL,
+  `s4` char(1) default NULL,
+  `murmurreg` char(1) default NULL,
+  `murmurstenosis` char(1) default NULL,
+  `rhonkhi` char(1) default NULL,
+  `hepatomegali` char(1) default NULL,
+  `edema` char(1) default NULL,
+  `tgl` date default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularfisik`
+--
+
+
+/*!40000 ALTER TABLE `vaskularfisik` DISABLE KEYS */;
+LOCK TABLES `vaskularfisik` WRITE;
+INSERT INTO `vaskularfisik` VALUES ('0000000019','00000002','','','','','','','','','','','2018-05-20','YOPI'),('0000000019','00000001','','','','','','','','','','','0000-00-00',''),('0000000016','00000009','','','','','','','','','','','0000-00-00','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularfisik` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularfisikexa`
+--
+
+DROP TABLE IF EXISTS `vaskularfisikexa`;
+CREATE TABLE `vaskularfisikexa` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `Systolic` varchar(20) default NULL,
+  `Diastolic` varchar(20) default NULL,
+  `heartbeart` varchar(20) default NULL,
+  `nyha` char(1) default NULL,
+  `palpi` char(1) default NULL,
+  `kardiomegali` char(1) default NULL,
+  `oedema` char(1) default NULL,
+  `pulmonary` char(1) default NULL,
+  `heartfail` char(1) default NULL,
+  `plaeural` char(1) default NULL,
+  `regurgitation` char(1) default NULL,
+  `stenosi` char(1) default NULL,
+  `trisregularation` char(1) default NULL,
+  `triscupidstenosis` char(1) default NULL,
+  `aorticreg` char(1) default NULL,
+  `aorticstenosis` char(1) default NULL,
+  `cardiac` char(1) default NULL,
+  `dut` char(1) default NULL,
+  `vte` char(1) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularfisikexa`
+--
+
+
+/*!40000 ALTER TABLE `vaskularfisikexa` DISABLE KEYS */;
+LOCK TABLES `vaskularfisikexa` WRITE;
+INSERT INTO `vaskularfisikexa` VALUES ('0000000019','00000001','','','','','','','','','','','','','','','','','','',''),('0000000016','00000009','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularfisikexa` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularkeluhan`
+--
+
+DROP TABLE IF EXISTS `vaskularkeluhan`;
+CREATE TABLE `vaskularkeluhan` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `keluhan` char(1) default NULL,
+  `bengkak` char(1) default NULL,
+  `pingsan` char(1) default NULL,
+  `hampir` char(1) default NULL,
+  `nyeri` char(1) default NULL,
+  `nyeridada` char(1) default NULL,
+  `berdebar` char(1) default NULL,
+  `turunsadar` char(1) default NULL,
+  `lemah` char(1) default NULL,
+  `lainnya` varchar(70) default NULL,
+  `tgl` date default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularkeluhan`
+--
+
+
+/*!40000 ALTER TABLE `vaskularkeluhan` DISABLE KEYS */;
+LOCK TABLES `vaskularkeluhan` WRITE;
+INSERT INTO `vaskularkeluhan` VALUES ('0000000019','00000002','','','','','','Y','Y','','','','2018-05-20','YOPI'),('0000000019','00000001','','','','','','Y','Y','','','','0000-00-00',''),('0000000016','00000009','Y','','Y','Y','','Y','','','','','0000-00-00','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularkeluhan` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularlab`
+--
+
+DROP TABLE IF EXISTS `vaskularlab`;
+CREATE TABLE `vaskularlab` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `tgl` date default NULL,
+  `hb` varchar(30) default NULL,
+  `ht` varchar(30) default NULL,
+  `l` varchar(30) default NULL,
+  `tr` varchar(30) default NULL,
+  `ur` varchar(30) default NULL,
+  `kr` varchar(30) default NULL,
+  `na` varchar(30) default NULL,
+  `k` varchar(30) default NULL,
+  `ca` varchar(30) default NULL,
+  `mg` varchar(30) default NULL,
+  `crp` varchar(30) default NULL,
+  `bnp` varchar(30) default NULL,
+  `kol` varchar(30) default NULL,
+  `ldl` varchar(30) default NULL,
+  `hdl` varchar(30) default NULL,
+  `tg` varchar(30) default NULL,
+  `gds` varchar(30) default NULL,
+  `gdp` varchar(30) default NULL,
+  `sgot` varchar(30) default NULL,
+  `pt` varchar(30) default NULL,
+  `ptt` varchar(30) default NULL,
+  `inr` varchar(30) default NULL,
+  `trop` varchar(30) default NULL,
+  `gdpp` varchar(30) default NULL,
+  `hba` varchar(30) default NULL,
+  `sgpt` varchar(30) default NULL,
+  `basofil` varchar(30) default NULL,
+  `eosionofil` varchar(30) default NULL,
+  `batang` varchar(30) default NULL,
+  `segmen` varchar(30) default NULL,
+  `limfosit` varchar(30) default NULL,
+  `monosit` varchar(30) default NULL,
+  `laktat` varchar(30) default NULL,
+  `fibrinogen` varchar(30) default NULL,
+  `dimer` varchar(30) default NULL,
+  `lainya` varchar(30) default NULL,
+  `nama` varchar(70) default NULL,
+  `tropd` varchar(30) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularlab`
+--
+
+
+/*!40000 ALTER TABLE `vaskularlab` DISABLE KEYS */;
+LOCK TABLES `vaskularlab` WRITE;
+INSERT INTO `vaskularlab` VALUES ('0000000019','00000002','2018-05-20','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','YOPI',''),('0000000019','00000001','0000-00-00','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''),('0000000016','00000009','0000-00-00','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularlab` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularmedikamentosa`
+--
+
+DROP TABLE IF EXISTS `vaskularmedikamentosa`;
+CREATE TABLE `vaskularmedikamentosa` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `tgl` date default NULL,
+  `aspirin` char(1) default NULL,
+  `cpg` char(1) default NULL,
+  `ticagrelor` char(1) default NULL,
+  `dobutamin` char(1) default NULL,
+  `dopamin` char(1) default NULL,
+  `ufh` char(1) default NULL,
+  `enoxaparin` char(1) default NULL,
+  `fondaparinux` char(1) default NULL,
+  `norepinefrin` char(1) default NULL,
+  `epinephrine` char(1) default NULL,
+  `lainnya` varchar(20) default NULL,
+  `bisoprol` char(1) default NULL,
+  `carvedilol` char(1) default NULL,
+  `captopril` char(1) default NULL,
+  `eamipril` char(1) default NULL,
+  `lisinopril` char(1) default NULL,
+  `morfin` char(1) default NULL,
+  `nitrogliserin` char(1) default NULL,
+  `sulfas` char(1) default NULL,
+  `bicarbonat` char(1) default NULL,
+  `magnesium` char(1) default NULL,
+  `lidocainev` char(3) default NULL,
+  `amiodaron` char(1) default NULL,
+  `kandesartan` char(1) default NULL,
+  `irbesartan` char(1) default NULL,
+  `losartan` char(1) default NULL,
+  `simvastatin` char(1) default NULL,
+  `atorvastatin` char(1) default NULL,
+  `rosurvastatin` char(1) default NULL,
+  `nama` varchar(70) default NULL,
+  `lainsatu` varchar(20) default NULL,
+  `laindua` varchar(20) default NULL,
+  `laintiga` varchar(20) default NULL,
+  `lainempat` varchar(20) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularmedikamentosa`
+--
+
+
+/*!40000 ALTER TABLE `vaskularmedikamentosa` DISABLE KEYS */;
+LOCK TABLES `vaskularmedikamentosa` WRITE;
+INSERT INTO `vaskularmedikamentosa` VALUES ('0000000019','00000001','0000-00-00','','','','','','','','','','','31','','','','','','','','','','','','','','','','','','','','','','',''),('0000000016','00000009','0000-00-00','','','','','','','','','','','18','','','','','','','','','','','','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularmedikamentosa` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularthorax`
+--
+
+DROP TABLE IF EXISTS `vaskularthorax`;
+CREATE TABLE `vaskularthorax` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `tgl` date default NULL,
+  `kardiomegali` char(1) default NULL,
+  `ictus` varchar(15) default NULL,
+  `ctr` varchar(5) default NULL,
+  `paru` char(1) default NULL,
+  `aorta` varchar(15) default NULL,
+  `pulmonal` varchar(15) default NULL,
+  `pinggang` varchar(15) default NULL,
+  `contour` char(1) default NULL,
+  `infitrat` char(1) default NULL,
+  `lokasi` varchar(25) default NULL,
+  `lainnya` varchar(50) default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularthorax`
+--
+
+
+/*!40000 ALTER TABLE `vaskularthorax` DISABLE KEYS */;
+LOCK TABLES `vaskularthorax` WRITE;
+INSERT INTO `vaskularthorax` VALUES ('0000000019','00000002','2018-05-20','','','','','','','','','','','','YOPI'),('0000000019','00000001','0000-00-00','','','','','','','','','','','',''),('0000000016','00000009','0000-00-00','','','','','','','','','','','','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularthorax` ENABLE KEYS */;
+
+--
+-- Table structure for table `vaskularvital`
+--
+
+DROP TABLE IF EXISTS `vaskularvital`;
+CREATE TABLE `vaskularvital` (
+  `idperiksa` varchar(20) default '0',
+  `idpasien` varchar(20) default NULL,
+  `umum` char(1) default NULL,
+  `sadar` char(1) default NULL,
+  `tekanan` varchar(15) default NULL,
+  `tekanand` varchar(15) default NULL,
+  `hr` char(1) default NULL,
+  `suhu` char(1) default NULL,
+  `suhulain` varchar(30) default NULL,
+  `rr` char(1) default NULL,
+  `sao` varchar(30) default NULL,
+  `tgl` date default NULL,
+  `nama` varchar(70) default NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `vaskularvital`
+--
+
+
+/*!40000 ALTER TABLE `vaskularvital` DISABLE KEYS */;
+LOCK TABLES `vaskularvital` WRITE;
+INSERT INTO `vaskularvital` VALUES ('0000000019','00000002','','','','','','','','','','2018-05-20','YOPI'),('0000000019','00000001','','','','','','','','','','0000-00-00',''),('0000000016','00000009','','','','','','','','','','0000-00-00','');
+UNLOCK TABLES;
+/*!40000 ALTER TABLE `vaskularvital` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
